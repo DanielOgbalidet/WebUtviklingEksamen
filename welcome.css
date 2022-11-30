@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    /* font-family from google fonts */
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+ text-decoration: none;
+ color: white;   
+}
+
+.midcontainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeText { 
+   margin-top: 17%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/*navbar start*/
+
+#header {
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    height: 75px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.navliste ul li {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 0;
+
+}
+
+.logo {
+    margin-top: 1.65%;
+    margin-left: 1.6%;
+    width: 8%;
+    height: 150%;
+    padding-top: 1.60%; 
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px ;
+    display: inline-block; 
+    position: relative;  
+    margin-top: 45px;
+}
+
+.navbar ul li a {
+text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    background: #FFDEAD;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    transition: 0.8s;
+
+}
+
+/*navbar slutt*/
+
+/* Midpart start*/
+#FrontPage {
+    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    
+}
+
+#midpart h1 {
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: transparent;
+    animation: hoved_tekst 1s ease forwards;
+    animation-delay: 1.5s;
+    margin-bottom: 2%;
+}
+
+#midpart h1 :nth-child(1){
+    animation-delay: 1s;
+}
+
+#midpart h1 :nth-child(2){
+    animation-delay: 2.2s;
+}
+ 
+
+#midpart h1 span {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0px;
+    background-color: #FFDEAD;
+    animation: hoved_tekst_box 1s ease;
+    animation-delay: 1s;
+    
+}
+
+#midpart h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#midpart h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+
+#midpart .Visit {
+display: inline-block;
+padding: 12px 25px;
+color: #FFDEAD;
+background-color: transparent;
+border: 3px solid #FFDEAD;
+border-radius: 25px;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-top: 20px;
+transition: .5s ease;
+transition-property: background-color, color;
+}
+
+#midpart .Visit:hover {
+    color: black;
+    background-color: #FFDEAD;
+}
+
+
+/* hovedside tekst animasjon */
+
+@keyframes hoved_tekst_box {
+    50%{
+        left: 0; 
+        width: 100%;  
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes hoved_tekst {
+    100%{
+        color: white;
+}
+}
+
+/* Slutt av hovedside tekst animasjon */
+/*Midpart ending */
+
+
+/*Places to visit slutt */
+
+
+/* FOR MOBIL */
+@media only screen and (max-width:800px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*navbar start*/
+
+    .navbar {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .navbar ul {
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+     /*navbar slutt*/
+
+}
