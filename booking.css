@@ -118,10 +118,10 @@ overflow: hidden;
 
 .kort{
 
+  
 
     width: 32%;
-
-height: 60%;
+    height: 60%;
 
     display: grid;
     grid-template-columns: 300px;
@@ -150,12 +150,9 @@ height: 60%;
 
 
 
-
-
-
 .kort-text{
     grid-area: text;
-    margin: 25px;
+    margin: 18%;
     color: white;
 
 }
@@ -169,7 +166,7 @@ height: 60%;
 
 
 #image1{
-    height: 60vh;
+    height: 300%;
     width: 140%;
 }
 
@@ -218,10 +215,10 @@ height: 60%;
 
 
 
+
 h2{
 
     display: flex;
-
     color: #FFDEAD;
 
 
@@ -242,6 +239,7 @@ h2{
 
 }
 
+/* Type animasjon*/
 @keyframes type {
     0%{
         width: 0ch;
