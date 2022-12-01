@@ -9,6 +9,7 @@ body{
 html {
     /* font-family from google fonts */
     color: black;
+    background-color: black;
     font-family: "papyrus", fantasy;
     font-size: large;
     height: 100%;
