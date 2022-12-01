@@ -22,18 +22,12 @@ html {
 
 .navbar {
     width: 100vw;
-    height: 5vw;
+    height: 8vh;
     display: flex;
     padding: 1%;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index: 3s; 
-}
-
-.navbar > a {
-    text-decoration: none;
-    color: white;   
 }
 
 .logo {
@@ -58,7 +52,8 @@ html {
 }
 
 .navbar ul li a {
-text-transform: uppercase;
+    text-transform: uppercase;
+    color: white;
 }
 
 .navbar ul li::after {
@@ -78,13 +73,7 @@ text-transform: uppercase;
 }
 /*navbar slutt*/
 
-p {
-    margin: 0;
-    padding-top: 2vh;
-    padding-left: 2vh;
-}
-
-.grid1 {
+.forside {
     background-image: linear-gradient(rgba(20, 19, 19, 0.688),
     rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
     background-position-y: center;
@@ -94,6 +83,20 @@ p {
     overflow-x: hidden;
 }
 
+p {
+    margin: 0;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;   
+   }
+
+
 .header {
     text-align: center;
     font-size: 25px;
@@ -101,25 +104,31 @@ p {
 }
 
 h1 {
-    padding-top: 7%;
-    margin-bottom: 0;
-    padding-bottom: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
-h2 {
-    padding-top: 2vh;
-    padding-left: 2vh;    
-    margin: 0;
+.foods {
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.drinks {
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+
 }
 
 .meny {
     display: flex;
-    width: 80%; 
+    width: 85%; 
     height: 100%;
-    background-color: white;
-    align-items: center;
-    margin-left: 15vh;
-    margin-right: 5vh;
+    background-color: #382521;
+    margin-left: 12vh;
+    margin-right: 12vh;
+    padding-bottom: 5%;
     overflow-x: hidden;
 }
 
