@@ -81,11 +81,6 @@ text-transform: uppercase;
 
 
 
-
-
-
-
-
 .section1{
     background-image: linear-gradient(rgba(20, 19, 19, 0.688),
     rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
@@ -219,12 +214,45 @@ height: 60vh;
 .knapp:hover{
     background: #FFDEAD;
     transition: 0.5s ease;
-
- 
-
-   
 }
 
+
+
+
+h2{
+
+    display: flex;
+
+    color: #FFDEAD;
+
+
+    font-size: 17px;
+    font-weight: 80;
+
+
+
+    /*
+    De fire linjene med koder under er viktige for typer animasjonen
+     */
+   
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:1px solid white;
+    animation: type 4s steps(8);
+
+
+}
+
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    35%{
+        width: 24ch;
+
+    }
+
+}
 
 
 
