@@ -128,8 +128,7 @@ height: 60%;
     grid-template-rows: 210px 210px 210px;
 
     grid-template-areas: "text";
-    font-family: roboto;
-
+    
 
 
 
@@ -226,7 +225,7 @@ h2{
     color: #FFDEAD;
 
 
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 80;
 
 
@@ -248,7 +247,7 @@ h2{
         width: 0ch;
     }
     35%{
-        width: 24ch;
+        width: 35ch;
 
     }
 
