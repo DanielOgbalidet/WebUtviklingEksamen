@@ -176,11 +176,12 @@ transition-property: background-color, color;
 }
 /* Slutt av hovedside tekst animasjon */
 
+
 /* Nederst text på hjemmesiden for å kilde bilde*/ 
 .bottomText {
     display: grid;
     width: 100%;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .bottomText > p {
