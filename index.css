@@ -193,8 +193,9 @@ transition-property: background-color, color;
 
 .bottomText > p {
     color: white;
-    font-size: 0.8rem;
+    font-size: 1%rem;
     text-align: center;
+    margin: 0.8%;
 }
 
 
