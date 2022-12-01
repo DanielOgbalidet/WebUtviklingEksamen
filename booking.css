@@ -9,7 +9,7 @@ body{
 html {
     /* font-family from google fonts */
     color: black;
-    background-color: black;
+   
     font-family: "papyrus", fantasy;
     font-size: large;
     height: 100%;
@@ -78,3 +78,169 @@ text-transform: uppercase;
 
 }
 /*navbar slutt*/
+
+
+
+
+
+
+
+
+.section1{
+    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+    background-position: center;
+    background-size: cover;
+   
+
+
+
+    width:100%;
+    height:100%;
+overflow: hidden;
+
+/* For å få div classene til å stå ved siden av hverandre */
+    display: inline-flex;
+    flex-wrap: wrap;
+
+
+    justify-content: center;
+    
+    
+
+
+}
+
+
+/* For å endre kortet og bildet som flex*/
+.section1>div{
+    margin: 0px;
+
+ 
+
+}
+
+
+.kort{
+
+
+    width: 32%;
+
+height: 60vh;
+
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 210px;
+
+    grid-template-areas: "text";
+    font-family: roboto;
+
+
+
+
+    background-color: #4C4E52;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+
+    justify-content: center;
+
+    margin: 30px;
+
+    /*Dette er viktig for hover effekten*/
+
+
+   
+
+}
+
+
+
+
+
+
+
+
+.kort-text{
+    grid-area: text;
+    margin: 25px;
+    color: white;
+
+}
+
+
+.kort-text p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+#image1{
+    height: 60vh;
+    width: 140%;
+}
+
+.bilde1{
+    -webkit-animation: rise 4s;
+    animation: rise 4s;
+
+
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    height: 20vh;
+   
+    
+   
+
+}
+
+.bilde1:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+
+
+/*Kode for knappen*/
+
+.knapp{
+
+    width: 50%;
+    height: 25%;
+
+    border-radius: 20px;
+   color: black;
+
+
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+.knapp:hover{
+    background: #FFDEAD;
+    transition: 0.5s ease;
+
+ 
+
+   
+}
+
+
+
+
+
+/* Animasjoner */
+@-webkit-keyframes rise {
+    from {
+
+        -webkit-transform: rotate(80deg) translateX(100px);
+        transform: rotate(80deg) translateX(100px);
+        opacity: 0.01; /* Med opacity kan vi bestemme hvor synlig kortene er i begynnelsen fordi vi er i "from" */
+
+    }
+    to {
+        -webkit-transform: rotate(0) translateX(0);
+        transform: rotate(0) translateX(0);
+        opacity: 1; /* Nå kan vi bestemme hvor synlige kortene skal være etter at de har hevet seg helt*/
+
+    } }
