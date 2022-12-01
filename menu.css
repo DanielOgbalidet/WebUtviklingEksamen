@@ -88,7 +88,7 @@ p {
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
-    color: white;
+    color: black;
 }
 
 a {
@@ -104,30 +104,32 @@ a {
 }
 
 h1 {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.oneFood-info > h4 {
+    position: relative; 
+    display: inline-block;
 }
 
 .foods {
     text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .drinks {
     text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
+    color: black;
+    border-bottom: 2px solid black;
 
 }
 
 .meny {
     display: flex;
-    width: 85%; 
     height: 100%;
-    background-color: #382521;
-    margin-left: 12vh;
-    margin-right: 12vh;
+    background-color: #faf3de    ;
     padding-bottom: 5%;
     overflow-x: hidden;
 }
