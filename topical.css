@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    /* font-family from google fonts */
+    color: black;
+    font-family: "papyrus", fantasy;
+    font-size: large;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+ text-decoration: none;
+ color: white;   
+}
+
+/*navbar start*/
+
+#header {
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    height: 75px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.navliste ul li {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.logo {
+    margin-top: 1.65%;
+    margin-left: 1.6%;
+    width: 8%;
+    height: 150%;
+    padding-top: 1.60%; 
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px ;
+    display: inline-block; 
+    position: relative;  
+    margin-top: 45px;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a {
+text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    background: #FFDEAD;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    transition: 0.8s;
+
+}
+
+/*navbar slutt*/
