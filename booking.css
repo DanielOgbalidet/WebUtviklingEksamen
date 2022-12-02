@@ -1,3 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -92,7 +99,7 @@ text-transform: uppercase;
 
     width:100%;
     height:100%;
-overflow: hidden;
+    overflow: hidden;
 
 /* For å få div classene til å stå ved siden av hverandre */
     display: inline-flex;
@@ -109,17 +116,15 @@ overflow: hidden;
 }
 
 .section1>.kort{
-    margin-left: 22.5%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
+    margin-left: 21.9%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
 }
 
 
 
 .kort{
 
-  
-
 width: 540px;
-height: 510px; /* Viktig med pixel her --> prosent kan gjøre siden ujevn primærskjerm av skalering*/
+height: 510px; 
 
   
 
@@ -227,7 +232,7 @@ h2{
     white-space: nowrap;
     overflow: hidden;
     border-right:1px solid white;
-    animation: type 3s steps(8);
+    animation: type 4s steps(12);
 
 
 }
@@ -238,7 +243,7 @@ h2{
         width: 0%;
     }
     35%{
-        width: 95%;
+        width: 90%;
 
     }
 }
@@ -261,3 +266,204 @@ h2{
         opacity: 1; /* Nå kan vi bestemme hvor synlige kortene skal være etter at de har hevet seg helt*/
 
     } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FOR MOBIL */
+@media only screen and (max-width:800px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+body{
+    margin: 0;
+    padding: 0}
+
+
+
+    .section1{
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+       
+    
+    
+        width:100%;
+        height:100%;
+        overflow: hidden;
+    
+   justify-content: center;
+
+   
+    
+    }
+    
+    
+    .section1>div{
+        margin: 0px;
+      
+
+        margin-top: 30%;
+
+        margin-right: 140px;
+       
+      
+    }
+    
+   .section1>.kort{
+
+    } 
+    
+
+
+    .kort{
+
+        width: 100%;
+        height: 450px; 
+        
+       
+        
+            display: grid;
+            grid-template-columns:100%;
+            grid-template-rows: 50%;
+        
+            grid-template-areas: "text";
+            
+        
+            background-color: #4C4E52;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+        
+    justify-content: center;
+        
+        }
+        
+        #image1{
+            display: none;
+        }
+        
+        
+        .kort-text{
+            grid-area: text;
+            margin: 8%;
+            color: white;
+        
+        }
+        
+        
+        .kort-text p{
+            color: white;
+            font-size: 18px;
+            padding-top: 10px;
+         
+          
+        }
+        
+        
+        
+        
+        /*Kode for knappen*/
+        
+        .knapp{
+        
+          
+
+            width: 40%;
+            height: 30%;
+        
+            border-radius: 60px;
+           color: black;
+        
+        
+            margin-left: 26%;
+            margin-top: 10%; 
+        
+          align-items: center;
+        }
+        
+        .knapp:hover{
+            background: #FFDEAD;
+            transition: 0.5s ease; }
+        
+        
+        h2{
+        
+            display: flex;
+            color: #FFDEAD;
+        
+        
+            font-size: 11px;
+            font-weight: 80;
+
+            animation: none;
+
+}
+
+
+
+
+
+}
