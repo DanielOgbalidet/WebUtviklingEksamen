@@ -182,6 +182,7 @@ h1::before{
     padding: 2% 4%;
     border-radius: 30px;
     box-shadow: rgba(50, 50, 93, 0.45) 0px 10px 40px -12px inset;
+    word-wrap: break-word;
     /*box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;*/
 }
 
