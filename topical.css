@@ -215,3 +215,18 @@ h1::before{
     width: 80%;
 }
 
+@media only screen and (max-width:800px) {
+    #venstre{
+        width: 115%;
+    }
+
+    #høyre{
+        margin-top: 7%;
+        width: 110%;
+    }
+
+    .imgPatagonia{
+        margin-left: 10%;
+        width: 82%;
+    }
+}
