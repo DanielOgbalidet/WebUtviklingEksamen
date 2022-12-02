@@ -2,7 +2,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
     font-family: "papyrus", fantasy;
     font-size: large;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 /*navbar start*/
@@ -119,7 +119,8 @@ html {
 .meny {
     font-family: Arial, Helvetica, sans-serif; 
     font-size: x-large;
-    width: 1500px;
+    width: 1350px;
+    max-width: 1500px;
     margin: 0px auto; 
     background-color: #faf3de;
     display: flex;
@@ -137,18 +138,18 @@ html {
 }
 
 .egenMeny {
-    flex-basis: 625px;
+    flex-basis: 600px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #4f301f;
 }
 
 .egenMeny:nth-child(1), .egenMeny:nth-child(3), .egenMeny:nth-child(5), .egenMeny:nth-child(7) {
-    margin-left: 75px;
+    margin-left: 40px;
 }
 
 .egenMeny:nth-child(2), .egenMeny:nth-child(4), .egenMeny:nth-child(6), .egenMeny:nth-child(8) {
-    margin-right: 75px;
+    margin-right: 40px;
 }
 
 .egenMeny {
