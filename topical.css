@@ -161,7 +161,7 @@ h1::before{
     color: #eeeee4; /*knkane*/
     -webkit-text-stroke: 0vw #eeeee4;
     overflow: hidden;
-    border-right: 7px solid #eeeee4; /*nejsnfnkes*/
+    border-right: 3px solid #eeeee4; /*nejsnfnkes*/
     animation: animateTopical 3s linear 0.8 forwards;
 }
 
@@ -187,13 +187,13 @@ h1::before{
 
 .bilder{
    
-    width: 1450px;
+    width: 77%;
     margin-top: 100px;
     margin: 0 10.5%;
 }
 
 #venstre, #høyre{
-    width: 650px;
+    width: 45%;
 }
 
 #venstre{
