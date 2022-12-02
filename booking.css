@@ -109,7 +109,7 @@ overflow: hidden;
 }
 
 .section1>.kort{
-    margin-left: 20.3%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
+    margin-left: 22.5%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
 }
 
 
@@ -118,8 +118,10 @@ overflow: hidden;
 
   
 
-    width: 32%;
-    height: 60%;
+width: 540px;
+height: 510px; /* Viktig med pixel her --> prosent kan gjøre siden ujevn primærskjerm av skalering*/
+
+  
 
     display: grid;
     grid-template-columns:100%;
@@ -151,14 +153,17 @@ overflow: hidden;
 
 .kort-text p{
     color: white;
-    font-size: 120%;
+    font-size: 20px;
+    /*Hadde 120% i fontsize */
     font-weight: 300;
 }
 
 
 #image1{
-    height: 300%;
-    width: 140%;
+    /*height: 300%;  --> */
+
+    height: 510px;
+    width: 540px;
 }
 
 .bilde1{
@@ -210,7 +215,7 @@ h2{
     color: #FFDEAD;
 
 
-    font-size: 120%;
+    font-size: 18px;
     font-weight: 80;
 
 
