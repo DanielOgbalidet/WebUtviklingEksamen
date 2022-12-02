@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+  
 }
 
 html {
@@ -88,14 +89,23 @@ text-transform: uppercase;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .section1{
     background-image: linear-gradient(rgba(20, 19, 19, 0.688),
     rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
     background-position: center;
     background-size: cover;
    
-
-
 
     width:100%;
     height:100%;
@@ -107,12 +117,17 @@ text-transform: uppercase;
 
    
 
+   
+
 }
 
 
 /* For å endre kortet og bildet som flex*/
 .section1>div{
     margin: 0px;
+    
+
+
 }
 
 .section1>.kort{
@@ -125,6 +140,10 @@ text-transform: uppercase;
 
 width: 540px;
 height: 510px; 
+
+
+
+
 
   
 
@@ -169,6 +188,10 @@ height: 510px;
 
     height: 510px;
     width: 540px;
+
+    
+    position: absolute;
+
 }
 
 .bilde1{
@@ -304,6 +327,197 @@ h2{
 
 
 
+/* Tablet versjon */
+
+    @media only screen and (max-width:1050px){
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+
+        #image1{
+            /*height: 300%;  --> */
+        
+            height: 300px;
+            width: 300px;
+         
+        
+        }
+        
+        .bilde1{
+           
+        
+           
+            cursor: pointer;
+        
+            height: 20%;
+           
+        
+        }
+        
+       
+        .section1{
+            background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+            rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+            background-position: center;
+            background-size: cover;
+           
+        
+        
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        
+       
+
+       /* For å få div classene til å stå ved siden av hverandre */
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+       
+        
+        }
+        
+        
+        .section1>div{
+            margin: 0px;
+          
+    
+            
+            margin-right: 140px;
+         
+        }
+        
+        .section1>.kort{
+            margin-left: 21.9%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
+            } 
+        
+    
+    
+        .kort{
+    
+    
+    
+            width: 50%;
+            height: 400px; 
+            
+           
+            
+                display: grid;
+                grid-template-columns:100%;
+                grid-template-rows: 50%;
+            
+                grid-template-areas: "text";
+                
+            
+                background-color: #4C4E52;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+            
+        justify-content: center;
+            
+            }
+            
+           
+            
+            
+            .kort-text{
+                grid-area: text;
+                margin: 8%;
+                color: white;
+            
+            }
+            
+            
+            .kort-text p{
+                color: white;
+                font-size: 18px;
+                padding-top: 10px;
+             
+              
+            }
+            
+            
+            
+            
+            /*Kode for knappen*/
+            
+            .knapp{
+            
+              
+    
+                width: 40%;
+                height: 30%;
+            
+                border-radius: 60px;
+               color: black;
+            
+            
+                margin-left: 26%;
+                margin-top: 10%; 
+            
+              align-items: center;
+            }
+            
+            .knapp:hover{
+                background: #FFDEAD;
+                transition: 0.5s ease; }
+            
+            
+            h2{
+            
+                display: flex;
+                color: #FFDEAD;
+            
+            
+                font-size: 11px;
+                font-weight: 80;}
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -381,6 +595,8 @@ body{
 
 
     .kort{
+
+
 
         width: 100%;
         height: 450px; 
