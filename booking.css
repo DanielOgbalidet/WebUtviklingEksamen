@@ -98,11 +98,7 @@ overflow: hidden;
     display: inline-flex;
     flex-wrap: wrap;
 
-
-    justify-content: center;
-    
-    
-
+   
 
 }
 
@@ -110,10 +106,12 @@ overflow: hidden;
 /* For å endre kortet og bildet som flex*/
 .section1>div{
     margin: 0px;
-
-
-
 }
+
+.section1>.kort{
+    margin-left: 20.3%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
+}
+
 
 
 .kort{
@@ -124,8 +122,8 @@ overflow: hidden;
     height: 60%;
 
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 210px;
+    grid-template-columns:100%;
+    grid-template-rows: 50%;
 
     grid-template-areas: "text";
     
@@ -135,11 +133,10 @@ overflow: hidden;
     background-color: #4C4E52;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
 
-    justify-content: center;
+   justify-content: center; 
 
-    margin: 30px;
-
-    /*Dette er viktig for hover effekten*/
+    
+   
 
 
    
@@ -152,7 +149,7 @@ overflow: hidden;
 
 .kort-text{
     grid-area: text;
-    margin: 18%;
+    margin: 10%;
     color: white;
 
 }
@@ -160,7 +157,7 @@ overflow: hidden;
 
 .kort-text p{
     color: white;
-    font-size: 15px;
+    font-size: 90%;
     font-weight: 300;
 }
 
@@ -178,7 +175,7 @@ overflow: hidden;
     transition: 0.5s ease;
     cursor: pointer;
 
-    height: 20vh;
+    height: 20%;
    
     
    
@@ -199,7 +196,7 @@ overflow: hidden;
     width: 50%;
     height: 25%;
 
-    border-radius: 20px;
+    border-radius: 80%;
    color: black;
 
 
@@ -222,7 +219,7 @@ h2{
     color: #FFDEAD;
 
 
-    font-size: 12px;
+    font-size: 80%;
     font-weight: 80;
 
 
@@ -234,7 +231,7 @@ h2{
     white-space: nowrap;
     overflow: hidden;
     border-right:1px solid white;
-    animation: type 4s steps(8);
+    animation: type 4s steps(10);
 
 
 }
@@ -242,11 +239,11 @@ h2{
 /* Type animasjon*/
 @keyframes type {
     0%{
-        width: 0ch;
+        width: 0%;
     }
-    35%{
-        width: 35ch;
-
+    30%{
+        width: 75%;
+/* var på 34ch ista istdedenfor 100%*/ 
     }
 
 }
