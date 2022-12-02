@@ -135,14 +135,8 @@ overflow: hidden;
 
    justify-content: center; 
 
-    
-   
-
-
-   
 
 }
-
 
 
 
@@ -157,7 +151,7 @@ overflow: hidden;
 
 .kort-text p{
     color: white;
-    font-size: 90%;
+    font-size: 120%;
     font-weight: 300;
 }
 
@@ -194,9 +188,9 @@ overflow: hidden;
 .knapp{
 
     width: 50%;
-    height: 25%;
+    height: 50%;
 
-    border-radius: 80%;
+    border-radius: 60px;
    color: black;
 
 
@@ -212,14 +206,13 @@ overflow: hidden;
 
 
 
-
 h2{
 
     display: flex;
     color: #FFDEAD;
 
 
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 80;
 
 
