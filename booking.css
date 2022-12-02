@@ -348,7 +348,7 @@ h2{
         #image1{
             /*height: 300%;  --> */
         
-            height: 300px;
+            height: 400px;
             width: 300px;
          
         
@@ -394,20 +394,19 @@ h2{
         .section1>div{
             margin: 0px;
           
-    
-            
-            margin-right: 140px;
+          
          
         }
         
         .section1>.kort{
-            margin-left: 21.9%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
+          
+            
             } 
-        
+
+
     
     
         .kort{
-    
     
     
             width: 50%;
@@ -481,7 +480,7 @@ h2{
                 color: #FFDEAD;
             
             
-                font-size: 11px;
+                font-size: 12px;
                 font-weight: 80;}
 
 
