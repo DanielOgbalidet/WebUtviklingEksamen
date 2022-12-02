@@ -54,6 +54,7 @@ html {
 .navbar ul li a {
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
 }
 
 .navbar ul li::after {
@@ -83,78 +84,105 @@ html {
     overflow-x: hidden;
 }
 
-p {
-    margin: 0;
-    padding-top: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    color: black;
+.tittel {
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 3vh;
 }
 
-a {
-    text-decoration: none;
-    color: white;   
-   }
-
-
-.header {
-    text-align: center;
-    font-size: 25px;
+.tittel > h4 {
+    font-size: 8vh;
+    position: relative;
+    display: inline-block;
     color: white;
 }
 
-h1 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+.tittel > h4 > span {
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: -10px;
+    color: white;
 }
 
-.oneFood-info > h4 {
-    position: relative; 
-    display: inline-block;
-}
-
-.foods {
-    text-align: center;
-    color: black;
-    border-bottom: 2px solid black;
-}
-
-.drinks {
-    text-align: center;
-    color: black;
-    border-bottom: 2px solid black;
-
+.tittel h4::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .meny {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: x-large;
+    width: 1500px;
+    margin: 0px auto; 
+    background-color: #faf3de;
     display: flex;
-    height: 100%;
-    background-color: #faf3de    ;
-    padding-bottom: 5%;
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 
-.box1 {
-    padding-top: 2vh;
+.img {
+    max-width: 200px;
+    width: 190px;
+    height: 150px;
+    margin-right: 30px;
+    border: 1px solid #4f301f;
+    border-radius: 50%;
 }
 
-.box2 {
-    padding: 2vh; 
+.egenMeny {
+    flex-basis: 625px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4f301f;
 }
 
-
-
-/*Bakgrunnsbilde*/
-.FrontPageUnder {
-    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
-    background-position: center;
+.egenMeny:nth-child(1), .egenMeny:nth-child(3), .egenMeny:nth-child(5), .egenMeny:nth-child(7) {
+    margin-left: 75px;
 }
-/*Bakgrunnsbilde ferdig*/
 
+.egenMeny:nth-child(2), .egenMeny:nth-child(4), .egenMeny:nth-child(6), .egenMeny:nth-child(8) {
+    margin-right: 75px;
+}
 
+.egenMeny {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.egenMeny > .meny-beskrivelse > h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 5px;
+    padding-bottom: 5px; 
+}
 
+.egenMeny:hover img {
+    border-radius: 0;
 
+}
 
+.meny-beskrivelse > p > span {
+    font-style: italic;
+}
 
+.meny-beskrivelse > h4 > span {
+    float: right;
+    font-style: italic;
+}
+
+.egenMeny:nth-child(1), .egenMeny:nth-child(2) {
+    padding-top: 5vh;
+}
+
+.egenMeny:nth-child(7), .egenMeny:nth-child(8) {
+    border-bottom: 0;
+}
