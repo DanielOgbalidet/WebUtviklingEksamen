@@ -186,8 +186,7 @@ h1::before{
 }
 
 .bilder{
-   
-    width: 77%;
+    width: 85%;
     margin-top: 100px;
     margin: 0 10.5%;
 }
@@ -198,12 +197,12 @@ h1::before{
 
 #venstre{
     float: left;
-    margin-left: 10px;
+    border-radius: 20px;
 }
 
 #høyre{
     float: right;
-    margin-right: 10px;
+    border-radius: 20px;
 }
 
 .imgGoogle, .imgPatagonia{
@@ -213,5 +212,6 @@ h1::before{
     rgba(255, 255, 255, 0.1) 20px 20px, 
     rgba(255, 255, 255, 0.05) 25px 25px;
     border-radius: 20px;
+    width: 80%;
 }
 
