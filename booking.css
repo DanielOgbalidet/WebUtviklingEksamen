@@ -171,8 +171,6 @@ overflow: hidden;
 
     height: 20%;
    
-    
-   
 
 }
 
@@ -247,8 +245,8 @@ h2{
 @-webkit-keyframes rise {
     from {
 
-        -webkit-transform: rotate(80deg) translateX(100px);
-        transform: rotate(80deg) translateX(100px);
+        -webkit-transform: rotate(60deg) translateX(70px);
+        transform: rotate(70deg) translateX(60px);
         opacity: 0.01; /* Med opacity kan vi bestemme hvor synlig kortene er i begynnelsen fordi vi er i "from" */
 
     }
