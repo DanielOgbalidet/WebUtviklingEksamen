@@ -216,6 +216,10 @@ h1::before{
     width: 80%;
 }
 
+#kilder > p > a{
+    color: #3586ff;
+}
+
 @media only screen and (max-width:800px) {
     #venstre{
         width: 115%;
@@ -229,5 +233,9 @@ h1::before{
     .imgPatagonia{
         margin-left: 10%;
         width: 82%;
+    }
+
+    .navbar{
+        display: grid;
     }
 }
