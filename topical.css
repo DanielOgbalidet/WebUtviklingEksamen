@@ -70,7 +70,6 @@ text-transform: uppercase;
 .navbar ul li:hover::after {
     width: 100%;
     transition: 0.8s;
-
 }
 /*navbar slutt*/
 
@@ -194,6 +193,7 @@ h1::before{
 
 #venstre, #høyre{
     width: 45%;
+    margin-bottom: 25px;
 }
 
 #venstre{
@@ -220,6 +220,14 @@ h1::before{
     color: #3586ff;
 }
 
+#hamburger{
+    display: none;
+}
+
+#icon{
+    display: none;
+}
+
 @media only screen and (max-width:800px) {
     #venstre{
         width: 115%;
@@ -235,7 +243,44 @@ h1::before{
         width: 82%;
     }
 
+    .navbar ul li{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #eeeee4;
+        background: #eeeee4;
+        margin-left: 0;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar ul li a{
+        color: black;
+    }
+
     .navbar{
-        display: grid;
+        display: none;
+        padding: 0;
+    }
+
+    #header input:checked ~ .navbar {
+        display: block;
+    }
+
+    /* hamburger ikon */
+    #header label{
+        display: inline-block;
+        color: #fff;
+        font-size: 1.2em;
+        font-style: normal;
+        padding: 10px;
+    }
+
+    .alt{
+        margin-top: 5vh
+    }
+
+    .navbar ul li:hover::after {
+        width: 0;
+        transition: 0.8s;
     }
 }
