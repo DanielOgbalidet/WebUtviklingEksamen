@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Testing</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active"><div class="logo">Gollo´s Cafe</div></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="./index.html" class="here">Welcome</a>
+                <a href="./booking.html">Booking</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./access.html">Accessibility</a>
+                <a href="./topical.html">Topical</a>
+            </div>
+            
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </a>
+        </div>
+        
+        <div class="midbottom">
+            <div class="midcontainer">
+                <div class="welcomeText">
+                    <h1>Welcome to Gollo´s<span></span></h1> 
+                    <a href="menu.html" type="button" class="menu">The menu</a>
+                </div>
+            </div>
+
+            <div class="bottomText">
+                <p>Åpningstider: Man-Søndag 08:00 - 18:00</p>
+                <p>Adresse: Osloveien 49, Oslo, 0123</p>
+                <p>Kontakt: GollosCafe@hotmail.com eller +47 12345678</p>
+                <p>(Bakgrunnsbildet er hentet fra Unsplash.com, tatt av Tony Lee)</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  }
+</script>
+</html>
