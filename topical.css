@@ -193,6 +193,7 @@ h1::before{
 
 #venstre, #høyre{
     width: 45%;
+    margin-bottom: 25px;
 }
 
 #venstre{
