@@ -247,11 +247,19 @@ h1::before{
         display: block;
         width: 100%;
         box-sizing: border-box;
-        border: 1px solid #333;
+        border: 1px solid #eeeee4;
+        background: #eeeee4;
+        margin-left: 0;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar ul li a{
+        color: black;
     }
 
     .navbar{
         display: none;
+        padding: 0;
     }
 
     #header input:checked ~ .navbar {
