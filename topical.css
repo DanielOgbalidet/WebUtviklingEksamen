@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
-html{
+html {
     background-color: #3586ff;
     font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
@@ -74,6 +74,7 @@ text-transform: uppercase;
 }
 /*navbar slutt*/
 
+/* bølgeanimasjon ved bunn */
 .bølger{
     position: relative;
     background: #3586ff;
@@ -142,6 +143,8 @@ text-transform: uppercase;
     }
 }
 
+/* overskrift */
+
 h1{
     margin-left: 12%;
     position: relative;
@@ -186,6 +189,7 @@ h1::before{
     /*box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;*/
 }
 
+/* bilder */
 .bilder{
     width: 85%;
     margin-top: 100px;
@@ -217,9 +221,13 @@ h1::before{
     width: 80%;
 }
 
+/* kilder */
+
 #kilder > p > a{
     color: #3586ff;
 }
+
+/* hamburger meny */
 
 #hamburger{
     display: none;
@@ -229,7 +237,11 @@ h1::before{
     display: none;
 }
 
+/* for MOBIL */
+
 @media only screen and (max-width:800px) {
+    /* bilder */
+
     #venstre{
         width: 115%;
     }
@@ -243,6 +255,8 @@ h1::before{
         margin-left: 10%;
         width: 82%;
     }
+
+    /* navbar */
 
     .navbar ul li{
         display: block;

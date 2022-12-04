@@ -74,6 +74,8 @@ html {
     overflow-x: hidden;
 }
 
+/* overskrift */
+
 .tittel {
     margin-top: 70px;
     text-align: center;
@@ -105,6 +107,8 @@ html {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* menyen/innhold */
 
 .meny {
     font-family: Arial, Helvetica, sans-serif; 
@@ -179,11 +183,17 @@ html {
     border-bottom: 0;
 }
 
+/* gjemmer bort pris som dukker opp ved mobil versjon */
+
 .prisMobil {
     display: none;
 }
 
+/* for TABLET */
+
 @media only screen and (max-width:1350px) {
+    /* logo */
+
     .logo {
         grid-area: logo;
         text-align: center;
@@ -201,6 +211,8 @@ html {
         color: white;
         font-size: 35px;
     }
+
+    /* navbar */
 
     .navbar {
         grid-area: navbar;
@@ -231,6 +243,8 @@ html {
         border-bottom: 2px solid white;
     }
 
+    /* menyen/innhold */
+
     .meny {
         width: auto;
         justify-content: center;
@@ -248,10 +262,15 @@ html {
     }
 }
 
+/* for MOBIL */
+
 @media only screen and (max-width:800px) {
+    /* overskrift */
     .tittel {
         margin-top: 30px;
     }
+
+    /* logo */
 
     .logo {
         text-align: center;
@@ -266,6 +285,8 @@ html {
     .logoName {
         color: white;
     }
+
+    /* navbar */
 
     .navbar {
         background-color: #9F8C76;
@@ -315,6 +336,8 @@ html {
         border-bottom: 0;
     }
 
+    /* meny/innhold */
+
     .meny img {
         display: none;
     }
@@ -344,6 +367,8 @@ html {
         width: 100%;
     }
 }
+
+/* for enda mindre skjermer, fikser visning av pris */
 
 @media only screen and (max-width:430px) {
     .meny-beskrivelse h4 span {
