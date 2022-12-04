@@ -248,9 +248,11 @@ h1::before{
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #eeeee4;
+        border-bottom: 1px #B6B6B4 solid;
         background: #eeeee4;
         margin-left: 0;
         padding: 10px 0 15px 5px;
+        text-align: center;
     }
 
     .navbar ul li a{
@@ -265,13 +267,14 @@ h1::before{
 
     #header input:checked ~ .navbar {
         display: block;
+        margin-bottom: 200px;
     }
 
     /* hamburger ikon */
     #header label{
         display: inline-block;
-        color: #fff;
-        font-size: 1.2em;
+        color: #eeeee4;
+        font-size: 2em;
         font-style: normal;
         padding: 10px;
     }
