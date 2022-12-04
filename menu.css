@@ -187,3 +187,44 @@ html {
 .egenMeny:nth-child(7), .egenMeny:nth-child(8) {
     border-bottom: 0;
 }
+
+@media only screen and (max-width:1350px) {
+    .meny {
+        width: auto;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .egenMeny {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .egenMeny:nth-child(7) {
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .meny img {
+        display: none;
+    }
+
+    .meny {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .egenMeny {
+        margin-left: 40px;
+    }
+
+    .egenMeny:nth-child(7) {
+        border-bottom: 1px solid black;
+    }
+
+    .egenMeny:nth-child(1), .egenMeny:nth-child(2) {
+        padding-top: 0;
+    }
+}
