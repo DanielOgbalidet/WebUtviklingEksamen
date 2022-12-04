@@ -274,8 +274,7 @@ html {
         border: 1px solid #555;
         position: relative;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        display: initial;
         justify-content: space-evenly;
         align-items: stretch;
         vertical-align: middle;
@@ -289,7 +288,6 @@ html {
         height: 100%;
         justify-content:center;
         border-bottom: 2px solid black;
-        margin-top: 15px;
     }
 
     .navbar > ul > li > a:hover {
@@ -300,9 +298,10 @@ html {
     .navbar > ul > li > a {
         text-decoration: none;
         color: white;
-        padding-top: 4px;
+        padding-top: 20px;
+        padding-bottom: 10px;
         font-size: 2.25vh;
-        height: 60px;
+        height: 50px;
     }
 
     .navbar > ul > li:nth-child(3) {
