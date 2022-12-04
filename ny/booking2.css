@@ -165,14 +165,10 @@ height: 53%;
 
 }
 
-
-
-
 .kort-text{
     grid-area: text;
     margin: 13%;
     color: white;
-
 }
 
 
@@ -217,9 +213,6 @@ height: 53%;
 #image1:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-
-
-
 }
 
 
@@ -261,8 +254,6 @@ h1{
 
    width: 150%;
 
-
-
     /*
     De tre linjene med koder under er viktige for typer animasjonen
      */
@@ -270,8 +261,6 @@ h1{
     white-space: nowrap; 
     overflow: hidden;
     animation: type 4s steps(12);
- 
-
 
 }
 
