@@ -419,12 +419,14 @@
         text-decoration: none;
         color: white;
         padding-top: 4px;
+        font-size: 2.25vh;
     }
 
     .navbar > ul > li:nth-child(1) {
         background-color: #684817;
-        font-weight: 500;
+        text-decoration: underline;
     }
+
 
     .info {
         background-image: linear-gradient(rgba(20, 19, 19, 0.688),
@@ -433,6 +435,89 @@
         background-size: cover;
         height: 75vh;
     }
+
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 2.5em;
+        margin-bottom: 0px;
+        margin-top: 10vh;
+    }
+
+    #midpart h1 {
+        display: block;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
+
+    /* hovedside tekst animasjon */
+      @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
+
+    #midpart .menu {
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #FFDEAD;
+        border: 2.5px solid #FFDEAD;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: "Monaco", monospace;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    }
+
+    .bottomText {
+        color: white;
+        padding-top: 7vh;
+        margin: auto;
+        text-align: center;
+    }
+
 
 
 
