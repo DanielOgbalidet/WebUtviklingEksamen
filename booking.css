@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Slik at alt som går utenfor bakgrunnsbildet ikke er synlig */
     height: 100%;
     width: 100%;
 
@@ -209,8 +209,7 @@ height: 53%;
    
 
     height: 52%;
-
-     width: 20%; 
+    width: 20%; 
    
 
 }
@@ -229,14 +228,14 @@ height: 53%;
 
 .knapp{
 
-    width: 50%;
-    height: 20%;
+    width: 35%;
+    height: 10%;
 
     border-radius: 60px;
    color: black;
 
 
-    margin-left: 20%;
+    margin-left: 27%;
     margin-top: 5%;
 }
 
@@ -256,25 +255,27 @@ h1{
     color: #FFDEAD;
 
 
-    font-size: 18px;
+    font-size: 75%;
     font-weight: 80;
+
+
+   width: 150%;
 
 
 
     /*
-    De fire linjene med koder under er viktige for typer animasjonen
+    De tre linjene med koder under er viktige for typer animasjonen
      */
    
-    white-space: nowrap;
+    white-space: nowrap; 
     overflow: hidden;
-    /* border-right:1px solid white; */
     animation: type 4s steps(12);
  
 
 
 }
 
-/* Type animasjon*/
+/* Type animasjon --> animasjonen som for overskriften til å "skrives" inn */
 @keyframes type {
     0%{
         width: 0%;
@@ -288,7 +289,9 @@ h1{
 
 
 
-/* Animasjoner */
+
+
+/* Kodene for anmasjonen som får bildet til å "heve" seg fra bunnen */
 @-webkit-keyframes rise {
     from {
 
@@ -391,16 +394,16 @@ h1{
             width: 35%;
             position: absolute;
 
-            pointer-events: none; /* For å fjerne hover effekten fra bildet*/
+            pointer-events: none; /* For å fjerne hover effekten fra bildet siden det er tablet versjon*/
 
         }
         
         .bilde1{
            
         
-           animation: none; 
-            cursor: pointer;
-            height: 20%;
+           animation: none;  /* Fjerne hover effekten fra bildet for tablet versjon */
+           cursor: pointer;
+           height: 20%;
            
         
         }
@@ -638,7 +641,7 @@ body{
 
 
             width: 140%;
-            height: 550px; 
+            height: 50%; 
    
 
 
@@ -656,6 +659,8 @@ body{
         
             justify-content: center;
 
+
+           
  
         
         }
@@ -742,6 +747,8 @@ body{
 }
 
 
+
+/* Dette er koden for animasjonen som får overskriften til å "skrives" inn*/
 @keyframes type {
     0%{
         width: 0%;
