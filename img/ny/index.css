@@ -1,0 +1,424 @@
+
+/* LAYOUT FOR PC´ER */
+@media only screen and (min-width:1050px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
+    }
+    
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% auto;
+        grid-template-areas: 
+            "logo  navbar navbar navbar navbar"
+            "info  info   info   info   info"
+    }
+    
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 12%;
+        padding-left: 10px;
+    }
+    
+    .logoName {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .navbar {
+        grid-area: navbar;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+    
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 3.3%;
+        padding-left: 10em;
+    }
+    
+    #here {
+        border-bottom: 4px solid white; 
+    }
+    
+    .navbar > ul > li > a {
+        color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 26px;
+        text-decoration: none;
+    }
+    
+    .navbar > ul > li > a:hover {
+        color: #FFDEAD;
+        font-size: 30px;
+    }
+    
+    .info {
+        grid-area: info;
+        text-align: center;
+        padding-top: 25vh;
+    }
+    
+    #midpart h1 {
+        display: block;
+        font-size: 3rem;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
+    
+    #midpart .menu {
+        display: inline-block;
+        padding: 12px 25px;
+        color: #FFDEAD;
+        background-color: transparent;
+        border: 2.5px solid #FFDEAD;
+        border-radius: 25px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    
+    }
+        
+    #midpart .menu:hover {
+        color: black;
+        background-color: #FFDEAD;
+    }
+    
+    
+    /* hovedside tekst animasjon */
+    @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
+    
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 7vh;
+    }
+    
+    .bottomText {
+        color: white;
+        padding-top: 3vh;
+        margin: auto;
+    }
+
+}
+/* FOR PC SLUTT*/ 
+
+
+/* FOR TABLET */ 
+@media only screen and (min-width:601px) and (max-width:1049px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 10% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2%;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 35px;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+    
+        margin: 0;
+        padding-top: 3.2%;
+        padding-left: 0px;
+        list-style: none;
+    }
+
+    .navbar ul  > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+    #here {
+        border-bottom: 2px solid white;
+    }
+
+    .info {
+        grid-area: info;
+        text-align: center;
+        padding-top: 18vh;
+    }
+
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 2.7em;
+        margin-bottom: 0px;
+    }
+
+    #midpart h1 {
+        display: block;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
+
+    /* hovedside tekst animasjon */
+      @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
+
+    #midpart .menu {
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #FFDEAD;
+        border: 2.5px solid #FFDEAD;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: "Monaco", monospace;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    }
+
+    .bottomText {
+        color: white;
+        padding-top: 3vh;
+        margin: auto;
+    }
+}
+/* FOR TABLET */ 
+
+
+
+/* FOR MOBIL START*/ 
+@media only screen and (max-width:600px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 5%;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align: center;
+    
+        margin: 0;
+        padding-top: 3.2%;
+        padding-left: 0px;
+        list-style: none;
+    }
+
+    .navbar ul  > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+
+
+
+
+}
+/* FOR MOBIL SLUTT*/ 
+
+
+
+
+
+ 
