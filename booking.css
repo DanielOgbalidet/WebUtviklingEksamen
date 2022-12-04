@@ -439,13 +439,7 @@ h1{
          
         }
         
-      /*  .section1>.kort{
-          
-            
-            } */
 
-
-    
     
         .kort{
     
@@ -630,10 +624,6 @@ body{
       
     }
     
- /*  .section1>.kort{
-
-    }  */
-    
 
 
     .kort{
@@ -737,7 +727,7 @@ body{
           
            border-right:none;
 
-            /*  animation: none;  */ /* For å fjerne animasjon effekten */
+           
            animation: type 4s steps(17);
 
            margin-right: 25px;
