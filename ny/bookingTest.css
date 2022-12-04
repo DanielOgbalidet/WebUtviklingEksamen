@@ -36,9 +36,8 @@
 
     .logo {
         grid-area: logo;
-        text-align: center;
-        padding-top: 12%;
-        padding-left: 10px;
+        padding-top: 5vh;
+        padding-left: 3vw;
     }
 
     .logoName {
@@ -116,8 +115,8 @@
     }
 
     .kort-text p:nth-child(3) {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 2vh;
+        margin-bottom:7vh;
 
     }
     
@@ -229,7 +228,7 @@
         display: grid;
         overflow-y: hidden;
         grid-template-columns: auto;
-        grid-template-rows: 10% 10% auto;
+        grid-template-rows: 11% 10% auto;
         grid-template-areas: 
             "logo"
             "navbar"
@@ -242,7 +241,7 @@
         padding-top: 2%;
         padding-right: 10px;
         padding-left: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         font-size: 40px;
         background-color: black;
     }
@@ -322,6 +321,10 @@
         color: white;
         font-size: 2vh;
     }
+
+    .kort-text p:nth-child(2) {
+        margin-bottom: 20px;
+    }
     
     #image1 {
         width: 100%;
@@ -347,12 +350,6 @@
         display: none;
     }
 
-
-    #image1:hover{
-        transform: scale(1.1);
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-    }
-
     .infoboks {
         display: flex;
         height: 100%;
@@ -374,11 +371,6 @@
     }
     
     
-    .knapp:hover {
-        background: #FFDEAD;
-        transition: 0.5s ease;
-    }
-    
     h1 {
         grid-area: "overskrift";
         display: flex;
@@ -387,38 +379,12 @@
         
         font-size: 4vh;
         font-weight: 80;
-        padding-left: 1vw;
         
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
         
-    /* Type animasjon --> animasjonen som for overskriften til å "skrives" inn */
-    @keyframes type {
-    
-    0%{
-        width: 0%;
-    }
-    
-    25%{
-        width: 100%;
-    }
-    }
-    
-    /* Kodene for anmasjonen som får bildet til å "heve" seg fra bunnen */
-    @-webkit-keyframes rise {
-        from {
-        -webkit-transform: rotate(60deg) translateX(70px);
-        transform: rotate(70deg) translateX(60px);
-        opacity: 0.01; /* Med opacity kan vi bestemme hvor synlig kortene er i begynnelsen fordi vi er i "from" */
-    }
-    
-    to {
-        -webkit-transform: rotate(0) translateX(0);
-        transform: rotate(0) translateX(0);
-        opacity: 1; /* Nå kan vi bestemme hvor synlige kortene skal være etter at de har hevet seg helt*/
-
-    } }
 }
 /* TABLET SLUTT */ 
 
@@ -459,7 +425,7 @@
         padding-top: 2.5vh;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 40px;
+        font-size: 38px;
         background-color: black;
     }
 
@@ -501,7 +467,7 @@
         text-decoration: none;
         color: white;
         padding-top: 4px;
-        font-size: 2.25vh;
+        font-size: 2.5vh;
     }
 
     .navbar > ul > li:nth-child(2) {
@@ -523,7 +489,6 @@
 
     }
 
-
     .kort-text {
         background-color: #4C4E52;
         height: 90vh;
@@ -531,10 +496,11 @@
 
     .kort-text > p {
         color: white;
-        margin-top: 2vh;
-        margin-bottom: 3vh;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
         padding-left: 10px;
         padding-right: 10px;
+        font-size: 15px;
     }
 
     #image1 {
