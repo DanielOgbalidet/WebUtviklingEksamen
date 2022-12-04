@@ -188,6 +188,10 @@ html {
     border-bottom: 0;
 }
 
+.prisMobil {
+    display: none;
+}
+
 @media only screen and (max-width:1350px) {
     .meny {
         width: auto;
@@ -224,7 +228,26 @@ html {
         border-bottom: 1px solid black;
     }
 
-    .egenMeny:nth-child(1), .egenMeny:nth-child(2) {
+    .egenMeny:nth-child(2) {
         padding-top: 0;
+    }
+
+    .egenMeny:nth-child(1) {
+        padding-top: 30px;
+    }
+
+    .meny-beskrivelse {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .meny-beskrivelse h4 span {
+        display: none;
+    }
+
+    .prisMobil {
+        font-weight: bold;
+        display: inline;
     }
 }
