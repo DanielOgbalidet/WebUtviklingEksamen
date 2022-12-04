@@ -1,0 +1,201 @@
+
+@media only screen and (min-width:1050px) {
+    html {
+        color: white;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% auto 10%;
+        grid-template-areas: 
+            "logo  navbar navbar navbar navbar"
+            "info  info   info   info   info"
+            "footer footer footer footer footer"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 12%;
+        padding-left: 10px;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .navbar {
+        grid-area: navbar;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+    
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 6vh;
+        padding-left: 5vw;
+        padding-right: 1vw;
+    }
+    
+    #here {
+        border-bottom: 4px solid white; 
+    }
+    
+    .navbar > ul > li > a {
+        color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 26px;
+        text-decoration: none;
+    }
+    
+    .navbar > ul > li > a:hover {
+        color: #FFDEAD;
+        font-size: 30px;
+    }
+
+    /* Navbar slutt*/
+
+    .info {
+        grid-area: info;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .kort {
+        display: inline-block;
+        width: 40vw;
+        height: 35em; 
+        background-color: #4C4E52;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+        border: 1px solid #4C4E52;
+    }
+
+    .kort-text{
+        grid-area: text;
+        margin: 13%;
+        color: white;
+    }
+    
+    
+    .kort-text p{
+        color: white;
+        font-size: 20px;
+     
+        font-weight: 300;
+    
+        margin-top: 20px;
+    }
+    
+    #image1 {
+        width: 30vw;
+        height: 35em;
+        padding-top: 10px;
+        display: inline-block;
+        -webkit-animation: rise 4s;
+        animation: rise 4s;
+     
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    #image1:hover{
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    }
+
+    .infoboks {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        padding-top: 10vh;
+    }
+
+    /*Kode for knappen*/
+
+.knapp{
+
+    width: 35%;
+    height: 6vh;
+
+    border-radius: 60px;
+   color: black;
+
+
+    margin-left: 27%;
+    margin-top: 5%;
+}
+
+.knapp:hover{
+    background: #FFDEAD;
+    transition: 0.5s ease;
+}
+
+
+
+
+h1{
+    grid-area: "overskrift";
+    display: flex;
+    color: #FFDEAD;
+
+    font-size: 40px;
+    font-weight: 80;
+    
+    width: 150%;
+
+    /* De tre linjene med koder under er viktige for typer animasjonen */
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: type 4s steps(12);
+
+}
+
+/* Type animasjon --> animasjonen som for overskriften til å "skrives" inn */
+@keyframes type {
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 85%;
+
+    }
+}
+
+
+    .footer {
+        grid-area: footer;
+
+    }
+
+    
+
+}
