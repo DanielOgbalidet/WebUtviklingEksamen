@@ -143,8 +143,8 @@ text-transform: uppercase;
 
 .kort{
 
-width: 40%;
-height: 510px; 
+width: 30%;
+height: 53%; 
 
 
 
@@ -188,8 +188,8 @@ height: 510px;
 
 #image1{
    
-   height: 53%;
-    width: 35%; 
+    height: 53%;
+    width: 30%; 
 
   
    position: absolute;
@@ -723,14 +723,16 @@ body{
           font-size: 80%;
          
 
-          /*  animation: none;  */ /* For å fjerne animasjon effekten */
+         
 
 
-padding-right: 40px;
+           padding-right: 15px;
 
            width: 120%;
           
            border-right:none;
+
+            /*  animation: none;  */ /* For å fjerne animasjon effekten */
            animation: type 4s steps(17);
 
            margin-right: 25px;
