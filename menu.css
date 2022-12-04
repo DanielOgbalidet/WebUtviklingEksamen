@@ -247,7 +247,9 @@ html {
     }
 
     .prisMobil {
-        font-weight: bold;
+        font-style: italic;
         display: inline;
+        font-weight: bold;
+        font-size: 22px;
     }
 }
