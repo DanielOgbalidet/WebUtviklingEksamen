@@ -265,6 +265,7 @@ h1::before{
 
     #header input:checked ~ .navbar {
         display: block;
+        margin-bottom: 200px;
     }
 
     /* hamburger ikon */
