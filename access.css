@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
     height: 100%;
     width: 100%;
@@ -16,61 +17,50 @@ html {
 
 /*navbar start*/
 
-#header {
-    position: relative;
+.logo {
+    grid-area: logo;
+    padding-top: 6vh;
+    padding-left: 4vw;
+}
+
+.logoName {
+    color: white;
+    font-size: 40px;
 }
 
 .navbar {
-    width: 100vw;
-    height: 8vh;
-    display: flex;
-    padding: 1%;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.logo {
-    margin-top: 1.65%;
-    margin-left: 1.6%;
-    width: 8%;
-    height: 150%;
-    padding-top: 1.60%; 
+    grid-area: navbar;
 }
 
 .navbar ul {
-    padding-right: 4%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
 
-.navbar ul li {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin: 0 20px ;
-    display: inline-block; 
-    position: relative;  
-    margin-top: 45px;
-    font-size: 1.1rem;
+    padding-top: 6vh;
+    padding-left: 5vw;
+    padding-right: 1vw;
 }
 
-.navbar ul li a {
-    text-transform: uppercase;
+#here {
+    border-bottom: 4px solid white; 
+}
+
+.navbar > ul > li > a {
     color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 26px;
     text-decoration: none;
 }
 
-.navbar ul li::after {
-    content: '';
-    width: 0%;
-    background: #FFDEAD;
-    height: 2px;
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-}
-
-.navbar ul li:hover::after {
-    width: 100%;
-    transition: 0.8s;
-
+.navbar > ul > li > a:hover {
+    color: #FFDEAD;
+    font-size: 30px;
 }
 /*navbar slutt*/
 
@@ -82,12 +72,19 @@ html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+        "logo  navbar navbar navbar navbar"
+        "info  info   info   info   info"
 }
 
 .tittel {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 3vh;
+    width: 96vw;
 }
 
 .tittel > h4 {
@@ -117,4 +114,149 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+}
+
+.meny-container {
+    grid-area: info;
+}
+
+@media only screen and (min-width:601px) and (max-width:1049px) {
+    .forside {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 10% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2%;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 35px;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
+    }
+    
+    .navbar ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        margin: 0;
+        padding-left: 0px;
+        list-style: none;
+        align-items:center;
+    }
+
+    .navbar ul  > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+    #here {
+        border-bottom: 2px solid white;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .forside {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 45% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+        width: 100vw;
+    }
+
+    .logoName {
+        color: white;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
+        height: 450px;
+    }
+
+    .navbar > ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #555;
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        justify-content: space-evenly;
+        align-items: stretch;
+        vertical-align: middle;
+    }
+
+    .navbar > ul > li {
+        display: flex;
+        align-items:center;
+        width: 100vw;
+        text-align: center;
+        height: 5%;
+        justify-content:center;
+        border-bottom: 2px solid black;
+        height: 90px;
+    }
+    
+    .navbar > ul > li > a {
+        text-decoration: none;
+        color: white;
+        padding-top: 4px;
+        font-size: 2.25vh;
+    }
+
+    .navbar > ul > li:nth-child(4) {
+        background-color: #684817;
+        text-decoration: underline;
+    }
+
+    #here {
+        border-bottom: 0;
+    }
+
+    .navbar > ul > li > a:hover {
+        color: white;
+        font-size: 2.25vh;
+    }
 }
