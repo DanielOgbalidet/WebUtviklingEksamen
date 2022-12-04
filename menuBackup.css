@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: auto;
+}
+
+html {
+    /* font-family from google fonts */
+    color: black;
+    font-family: "papyrus", fantasy;
+    font-size: large;
+    height: 100%;
+    width: auto;
+}
+
+/*navbar start*/
+
+#header {
+    position: relative;
+}
+
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 1.65%;
+    margin-left: 1.6%;
+    width: 8%;
+    height: 150%;
+    padding-top: 1.60%; 
+}
+
+.navbar ul {
+    padding-right: 4%;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px ;
+    display: inline-block; 
+    position: relative;  
+    margin-top: 45px;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    background: #FFDEAD;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    transition: 0.8s;
+
+}
+/*navbar slutt*/
+
+.forside {
+    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+    background-position-y: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.tittel {
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.tittel > h4 {
+    font-size: 8vh;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.tittel > h4 > span {
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: -10px;
+    color: white;
+}
+
+.tittel h4::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.meny {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: x-large;
+    width: 1350px;
+    max-width: 1500px;
+    margin: 0px auto; 
+    background-color: #faf3de;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.img {
+    max-width: 200px;
+    width: 190px;
+    height: 150px;
+    margin-right: 30px;
+    border: 1px solid #4f301f;
+    border-radius: 50%;
+}
+
+.egenMeny {
+    flex-basis: 600px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4f301f;
+}
+
+.egenMeny:nth-child(1), .egenMeny:nth-child(3), .egenMeny:nth-child(5), .egenMeny:nth-child(7) {
+    margin-left: 40px;
+}
+
+.egenMeny:nth-child(2), .egenMeny:nth-child(4), .egenMeny:nth-child(6), .egenMeny:nth-child(8) {
+    margin-right: 40px;
+}
+
+.egenMeny {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.egenMeny > .meny-beskrivelse > h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 5px;
+    padding-bottom: 5px; 
+}
+
+.egenMeny:hover img {
+    border-radius: 0;
+
+}
+
+.meny-beskrivelse > p > span {
+    font-style: italic;
+}
+
+.meny-beskrivelse > h4 > span {
+    float: right;
+    font-style: italic;
+}
+
+.egenMeny:nth-child(1), .egenMeny:nth-child(2) {
+    padding-top: 5vh;
+}
+
+.egenMeny:nth-child(7), .egenMeny:nth-child(8) {
+    border-bottom: 0;
+}
+
+.prisMobil {
+    display: none;
+}
+
+@media only screen and (max-width:1350px) {
+    .meny {
+        width: auto;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .egenMeny {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .egenMeny:nth-child(7) {
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .meny img {
+        display: none;
+    }
+
+    .meny {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .egenMeny {
+        margin-left: 40px;
+    }
+
+    .egenMeny:nth-child(7) {
+        border-bottom: 1px solid black;
+    }
+
+    .egenMeny:nth-child(2) {
+        padding-top: 0;
+    }
+
+    .egenMeny:nth-child(1) {
+        padding-top: 30px;
+    }
+
+    .meny-beskrivelse {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .meny-beskrivelse h4 span {
+        display: none;
+    }
+
+    .prisMobil {
+        font-style: italic;
+        display: inline;
+        font-weight: bold;
+        font-size: 22px;
+    }
+}
