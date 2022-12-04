@@ -143,16 +143,16 @@ text-transform: uppercase;
 
 .kort{
 
-width: 560px;
+width: 40%;
 height: 510px; 
 
 
 
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 50%;
+    grid-template-rows: 2%;
 
-    grid-template-areas: "text";
+    grid-template-areas: "overskrift" "text";
     
 
 
@@ -188,31 +188,39 @@ height: 510px;
 
 #image1{
    
-   height: 510px;
-    width: 500px; 
+   height: 53%;
+    width: 35%; 
 
   
-  
    position: absolute;
+
+   -webkit-animation: rise 4s;
+   animation: rise 4s;
+
+   transition: 0.5s ease;
+   cursor: pointer;
  
 }
 
 .bilde1{
-    -webkit-animation: rise 4s;
-    animation: rise 4s;
+  
 
 
-    transition: 0.5s ease;
-    cursor: pointer;
+   
 
-    height: 20%;
+    height: 52%;
+
+     width: 20%; 
    
 
 }
 
-.bilde1:hover{
+#image1:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+
+
+
 }
 
 
@@ -222,7 +230,7 @@ height: 510px;
 .knapp{
 
     width: 50%;
-    height: 50%;
+    height: 20%;
 
     border-radius: 60px;
    color: black;
@@ -240,7 +248,9 @@ height: 510px;
 
 
 
-h2{
+h1{
+
+    grid-area: "overskrift";
 
     display: flex;
     color: #FFDEAD;
@@ -347,6 +357,31 @@ h2{
         width: 100%;
     
     }
+
+
+    .kort{
+
+        width: 560px;
+        height: 510px; 
+        
+        
+        
+            display: grid;
+            grid-template-columns:20%;
+            grid-template-rows: 100%;
+        
+            grid-template-areas: "overskrift" "text";
+            
+        
+        
+        
+            background-color: #4C4E52;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+        
+           justify-content: center; 
+        
+        
+        }
     
 
         #image1{
@@ -419,10 +454,10 @@ h2{
             
                
                 grid-template-columns:100%;
-                grid-template-rows: 50%;
+                grid-template-rows: 5%;
             
-              /*  display: grid;
-                grid-template-areas: "text"; */
+                grid-template-areas: "overskrift" "text";
+
                 justify-content: center;
             
                 background-color: #4C4E52;
@@ -436,7 +471,7 @@ h2{
             
             
             .kort-text{
-               /* grid-area: text; */
+            
 
                 margin: 8%;
                 color: white;
@@ -455,14 +490,14 @@ h2{
             
             
             
-            /*Kode for knappen*/
+           
             
             .knapp{
             
               
     
                 width: 40%;
-                height: 30%;
+                height: 12%;
             
                 border-radius: 60px;
                color: black;
@@ -479,10 +514,12 @@ h2{
                 transition: 0.5s ease; }
             
             
-            h2{
+            h1{
             
                 display: flex;
                 color: #FFDEAD;
+
+                grid-area: "overskrift";
             
             
                 font-size: 12px;
@@ -605,14 +642,15 @@ body{
    
 
 
-
+/* Grid koder */
             display: grid;
             grid-template-columns:100%;
-            grid-template-rows: 50%;
-        
-            grid-template-areas: "text";
+            grid-template-rows: 5%;
+            grid-template-areas: "overskrift" "text";
             
         
+
+
             background-color: #4C4E52;
             box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
         
@@ -654,7 +692,7 @@ body{
           
 
             width: 40%;
-            height: 30%;
+            height: 15%;
         
             border-radius: 60px;
            color: black;
@@ -671,26 +709,33 @@ body{
             transition: 0.5s ease; }
         
         
-        h2{
+        h1{
         
+
+         grid-area: "overskrift";
+
+
             display: flex;
             color: #FFDEAD;
         
             
         
-            font-size: 12px;
-          text-indent: 20px;
+          font-size: 80%;
+         
 
           /*  animation: none;  */ /* For å fjerne animasjon effekten */
 
 
-            width: 100%;
-           overflow: auto;
-            border-right:none;
-            animation: type 4s steps(17);
+padding-right: 40px;
 
-        margin-right: 25px;
+           width: 120%;
+          
+           border-right:none;
+           animation: type 4s steps(17);
 
+           margin-right: 25px;
+
+          
 
 }
 
@@ -704,6 +749,10 @@ body{
 
     }
 }
+
+
+
+
 
 
 
