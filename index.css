@@ -1,364 +1,523 @@
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    height: auto;
-    width: 100%;
-}
 
-html {
-    /* font-family from google fonts */
-    color: black;
-    font-family: "papyrus", fantasy;
-    font-size: large;
-    height: 100%;
-    width: 100%;
-}
-
-a {
- text-decoration: none;
- color: white;   
-}
-
-.midcontainer {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.welcomeText { 
-   margin-top: 11%;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-}
-
-
-/*navbar start*/
-
-#header {
-    position: relative;
-}
-
-.navbar {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    padding: 1%;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.logo {
-    margin-top: 42px;
-    margin-left: 1.6%;
-    font-size: 2rem;
-    width: 300px;
-    height: 75px;
-    padding-left: 10px;
-    color: white;
-}
-
-.navbar ul {
-    padding-right: 1%;
-    width: 1100px;
-}
-
-.navbar ul li {
-    list-style: none;
-    margin: 0 20px ;
-    display: inline-block; 
-    position: relative;  
-    margin-top: 37px;
-    font-size: 1.1rem;
-}
-
-.navbar ul li a {
-text-transform: uppercase;
-font-weight: bolder;
-}
-
-.navbar ul li::after {
-    content: '';
-    width: 0%;
-    background: #FFDEAD;
-    height: 2px;
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-}
-
-.navbar ul li:hover::after {
-    width: 100%;
-    transition: 0.8s;
-
-}
-/*navbar slutt*/
-
-/* Midpart start*/
-/* Bakgrunnbilde hentet fra Unsplash.com, tatt av Tony Lee*/
-#FrontPage {
-    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-    rgba(0, 0, 0, 0.66)) , url(./img/gate.jpeg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    overflow: hidden;
-}
-
-#midpart h1 {
-    display: block;
-    width: fit-content;
-    font-size: 3rem;
-    position: relative;
-    color: transparent;
-    animation: hoved_tekst 1s ease forwards;
-    animation-delay: 1.5s;
-    margin-bottom: 2%;
-}
-
-#midpart h1 :nth-child(1){
-    animation-delay: 1s;
-}
-
- 
-#midpart h1 span {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: 0px;
-    background-color: #FFDEAD;
-    animation: hoved_tekst_box 1s ease;
-    animation-delay: 1s;
-}
-
-#midpart h1:nth-child(1) span{
-    animation-delay: 1s;
-}
-
-#midpart .menu {
-display: inline-block;
-padding: 12px 25px;
-color: #FFDEAD;
-background-color: transparent;
-border: 2.5px solid #FFDEAD;
-border-radius: 25px;
-font-size: 15px;
-text-transform: uppercase;
-letter-spacing: 1px;
-margin-top: 20px;
-transition: .5s ease;
-transition-property: background-color, color;
-}
-
-#midpart .menu:hover {
-    color: black;
-    background-color: #FFDEAD;
-}
-
-/* hovedside tekst animasjon */
-@keyframes hoved_tekst_box {
-    50%{
-        left: 0; 
-        width: 100%;  
+/* LAYOUT FOR PC´ER */
+@media only screen and (min-width:1050px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
     }
-    100%{
-        left: 100%;
-        width: 0;
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
     }
-}
-
-@keyframes hoved_tekst {
-    100%{
-        color: white;
-    }
-}
-/* Slutt av hovedside tekst animasjon */
-
-
-/* Nederst text på hjemmesiden for å kilde bilde*/ 
-.bottomText {
-    display: grid;
-    width: 100%;
-    padding-top: 5%;
-}
-
-.bottomText > p {
-    color: white;
-    font-size: 0.9em;
-    text-align: center;
-    margin: 0.8%;
-}
-
-
-/*Midpart ending */
-
-/* FOR TABLET */
-@media only screen and (max-width:1050px) {
-
-    .navbar {
-        padding-top: 25px;
-        padding-bottom: 30px;
-    }
-
-    .navbar ul {
-        margin-top: 0;
-        padding-left: 5px;
-        padding-right: 8px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        min-width: 600px;
-        width: 650px;
-    }
-
-    .navbar ul li a {
-        font-size: 19px;
-    }
-
-    .navbar ul li {
-        margin-left: 10px;
-        margin-right: 10px;
+    
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% auto;
+        grid-template-areas: 
+            "logo  navbar navbar navbar navbar"
+            "info  info   info   info   info"
     }
     
     .logo {
-        font-size: 1.5rem;
-        padding-left: 5px;
+        grid-area: logo;
+        text-align: center;
+        padding-top: 12%;
+        padding-left: 10px;
     }
-
-    .welcomeText {
-        padding-top: 2%;
-        margin-top: 50px;
+    
+    .logoName {
+        color: white;
+        font-size: 40px;
     }
-
-    .bottomText {
-        padding-top: 8%;
-        padding-bottom: 50px;
-        font-size: x-large;
+    
+    .navbar {
+        grid-area: navbar;
     }
-
+    
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+    
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 6vh;
+        padding-left: 5vw;
+        padding-right: 1vw;
+    }
+    
+    #here {
+        border-bottom: 4px solid white; 
+    }
+    
+    .navbar > ul > li > a {
+        color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 26px;
+        text-decoration: none;
+    }
+    
+    .navbar > ul > li > a:hover {
+        color: #FFDEAD;
+        font-size: 30px;
+    }
+    
+    .info {
+        grid-area: info;
+        text-align: center;
+        padding-top: 25vh;
+    }
+    
+    #midpart h1 {
+        display: block;
+        font-size: 3rem;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
+    
     #midpart .menu {
         display: inline-block;
         padding: 12px 25px;
-        color: black;
-        font-weight: bolder;
-        font-family: Arial, Helvetica, sans-serif; 
-        background-color: #FFDEAD;
+        color: #FFDEAD;
+        background-color: transparent;
         border: 2.5px solid #FFDEAD;
         border-radius: 25px;
         font-size: 15px;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-top: 20px;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
         transition: .5s ease;
         transition-property: background-color, color;
-        }
+    
+    }
         
-
-}
-
-
-/* FOR MOBIL */
-@media only screen and (max-width:800px) {
-    .logo {
-        padding: 25px 0px 0px 0px;
-        font-size: 2.0em;
+    #midpart .menu:hover {
+        color: black;
+        background-color: #FFDEAD;
+    }
+    
+    
+    /* hovedside tekst animasjon */
+    @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
+    
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 7vh;
+    }
+    
+    .bottomText {
+        color: white;
+        padding-top: 3vh;
+        margin: auto;
     }
 
+}
+/* FOR PC SLUTT*/ 
+
+
+/* FOR TABLET */ 
+@media only screen and (min-width:601px) and (max-width:1049px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
     body {
-        overflow: scroll;
-    }
-
-    #FrontPage {
-        overflow: scroll;
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
+        height: auto;
+        width: 100%;
     }
-  
+
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 10% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2%;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 35px;
+    }
+
     .navbar {
-    align-items: stretch;
-    flex-direction: column;
-    align-items: center;
-    height: initial;
-    justify-content: center;
-    padding: 0px 0px 0px 0px;
-    text-align: center;
-    background-color: #4f301f;
+        grid-area: navbar;
+        background-color: #9F8C76;
+    }
+    
+    .navbar ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    
+        margin: 0;
+        padding-left: 0px;
+        list-style: none;
+        align-items:center;
     }
 
+    .navbar ul  > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+    #here {
+        border-bottom: 2px solid white;
+    }
+
+    .info {
+        grid-area: info;
+        text-align: center;
+        padding-top: 18vh;
+    }
+
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 2.7em;
+        margin-bottom: 0px;
+    }
+
+    #midpart h1 {
+        display: block;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
+
+    /* hovedside tekst animasjon */
+      @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
+
+    #midpart .menu {
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #FFDEAD;
+        border: 2.5px solid #FFDEAD;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: "Monaco", monospace;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    }
+
+    .bottomText {
+        color: white;
+        padding-top: 3vh;
+        margin: auto;
+    }
+}
+/* FOR TABLET */ 
+
+
+
+/* FOR MOBIL START*/ 
+@media only screen and (max-width:600px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 45% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 40px;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
+
+    }
+
+    .navbar > ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #555;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        vertical-align: middle;
+    }
+
+    .navbar > ul > li {
+        display: flex;
+        align-items:center;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        justify-content:center;
+        border-bottom: 2px solid black;
+    }
+    
     .navbar > ul > li > a {
-    font-size: 1.2em; 
-    margin-right: 300px;
-    text-align: center;
-    border-bottom: 1px solid black; 
-    padding-bottom: 3px; 
-    color: black;
+        text-decoration: none;
+        color: white;
+        padding-top: 4px;
+        font-size: 2.25vh;
     }
 
-   .navbar > ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    /* For IE, the outcast */
-    display: inline; 
-    padding-left: 17em;
-    padding-bottom: 5vh;
-    background-color: #faf3de;
-    border-top: 5px black;
-}
+    .navbar > ul > li:nth-child(1) {
+        background-color: #684817;
+        text-decoration: underline;
+    }
 
-.here {
-    font-weight: bolder;
-    text-decoration: line-through;
-}
 
-.menu {
-    padding-top:0;
-    margin-top:0;
-}
+    .info {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 75vh;
+    }
 
-h1 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+    .welcomeText {
+        width: 100%;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .welcomeText > h1 {
+        font-size: 2.5em;
+        margin-bottom: 0px;
+        margin-top: 10vh;
+    }
 
-.welcomeText {
-    margin-top: 0;
-    margin-right: 25px;
-    margin-left: 25px;
-}
+    #midpart h1 {
+        display: block;
+        position: relative;
+        color: transparent;
+        animation: hoved_tekst 1s ease forwards;
+        animation-delay: 1.5s;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    
+    #midpart h1 span {
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0px;
+        background-color: #FFDEAD;
+        animation: hoved_tekst_box 1s ease;
+        animation-delay: 1s;
+    }
+    
+    #midpart h1 :nth-child(1){
+        animation-delay: 1s;
+    }
 
-.bottomText {
-    padding-right: 15px;
-    word-wrap: break-word;
-}
+    /* hovedside tekst animasjon */
+      @keyframes hoved_tekst_box {
+        50%{
+            left: 0; 
+            width: 100%;  
+        }
+        100%{
+            left: 100%;
+            width: 0;
+        }
+    }
+    
+    @keyframes hoved_tekst {
+        100%{
+            color: white;
+        }
+    }
+    /* Slutt av hovedside tekst animasjon */
 
-#FrontPage {
-    background-image: none;
-}
+    #midpart .menu {
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #FFDEAD;
+        border: 2.5px solid #FFDEAD;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: "Monaco", monospace;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    }
 
-.midbottom {
-    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-    rgba(0, 0, 0, 0.66)) , url(./img/gate.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-p:nth-child(1) {
-    padding-top: 25px;
-}
-
-p {
-
-    padding-bottom: 25px;
-}
-
-p:nth-child(4) {
-    padding-bottom: 40px;
-}
+    .bottomText {
+        color: white;
+        padding-top: 7vh;
+        margin: auto;
+        text-align: center;
+    }
 
 }
+/* FOR MOBIL SLUTT*/ 
