@@ -60,10 +60,6 @@ html {
     text-decoration: none;
 }
 
-.navbar > ul > li > a:hover {
-    color: #FFDEAD;
-    font-size: 4.5vh;
-}
 /*navbar slutt*/
 
 .forside {
@@ -122,6 +118,8 @@ html {
     grid-area: info;
 }
 
+
+/* TABLET START */
 @media only screen and (min-width:601px) and (max-width:1049px) {
 
     .forside {
@@ -144,7 +142,7 @@ html {
         grid-area: logo;
         text-align: center;
         padding-top: 2vh;
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 50px;
         padding-bottom: 1vh;
         height: 8vh;
@@ -169,11 +167,13 @@ html {
         width: 100%;
         height: 100%;
        
-        padding-top: 0;
         margin: 0;
         padding-left: 0px;
         list-style: none;
         align-items:center;
+
+        padding-top: 2px;
+
     }
 
     .navbar ul  > li > a {
@@ -183,7 +183,7 @@ html {
     }
 
     #here {
-        border-bottom: 4px solid white; 
+        border-bottom: 2px solid white;
     }
     
 }
@@ -210,7 +210,7 @@ html {
         padding-bottom: 1vh;
         background-color: black;
         font-size: 7vh;
-        width: 100;
+        width: 100%;
         margin-right: 0;
         height: 11vh;
     }
@@ -224,7 +224,7 @@ html {
     .navbar {
         grid-area: navbar;
         background-color: #9F8C76;
-        height: 450px;
+        height: 100%;
     }
 
     .navbar > ul {
@@ -248,7 +248,7 @@ html {
         height: 5%;
         justify-content:center;
         border-bottom: 2px solid black;
-        height: 90px;
+        height: 9.5vh;
     }
     
     .navbar > ul > li > a {
@@ -275,5 +275,13 @@ html {
     .navbar > ul > li > a:hover {
         color: white;
         font-size: 2.5vh;
+    }
+
+    .meny-container {
+        margin-top: 6vh;
+    }
+
+    .tittel {
+        font-size: 4vw;
     }
 }

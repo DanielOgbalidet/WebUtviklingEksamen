@@ -255,11 +255,6 @@
         font-size: 3.5vh;
     }
 
-    .navbar > ul > li > a:hover {
-        color: #FFDEAD;
-        font-size: 4.5vh;
-    }
-
     #here {
         border-bottom: 2px solid white;
     }
