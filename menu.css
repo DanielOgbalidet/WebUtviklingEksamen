@@ -194,15 +194,14 @@ html {
 /* FOR TABLET */
 @media only screen and (max-width:1350px) {
     /* logo */
-
     .logo {
         grid-area: logo;
         text-align: center;
-        padding-top: 2%;
-        padding-right: 10px;
+        padding-top: 2vh;
         padding-left: 10px;
-        padding-bottom: 1%;
-        font-size: 40px;
+        padding-right: 50px;
+        padding-bottom: 1vh;
+        height: 8vh;
         background-color: black;
         float: none;
         width: 100%;
@@ -210,7 +209,7 @@ html {
 
     .logoName {
         color: white;
-        font-size: 35px;
+        font-size: 7vh;
     }
 
     /* navbar */
@@ -225,19 +224,22 @@ html {
         gap: 1rem;
         justify-content: space-evenly;
         width: 100%;
-        height: 100%;
+        height: 3.5vh;
+        
         padding-top: 3%;
         padding-bottom: 3%;
         margin: 0;
         padding-left: 0px;
+        
         list-style: none;
         align-items:center;
+
     }
 
     .navbar ul  > li > a {
         text-decoration: none;
         color: white;
-        font-size: 22px;
+        font-size: 3.5vh;
     }
 
     #here {
@@ -277,12 +279,12 @@ html {
 
     .logo {
         text-align: center;
-        padding-top: 2.5vh;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-top: 2vh;
+        padding-right: 4vh;
+        padding-left: 0;
         padding-bottom: 1vh;
-        font-size: 40px;
         background-color: black;
+        font-size: 7vh;
     }
 
     .logoName {
@@ -326,8 +328,8 @@ html {
     .navbar > ul > li > a {
         text-decoration: none;
         color: white;
-        padding-bottom: 10px;
-        font-size: 2.25vh;
+        padding-top: 4px;
+        font-size: 2.5vh;
     }
 
     .navbar > ul > li:nth-child(3) {
