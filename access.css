@@ -118,7 +118,8 @@ html {
     background-color: #faf3de;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
+    height: 100%; 
 }
 
 .meny-container {
