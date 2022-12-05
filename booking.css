@@ -93,7 +93,7 @@
     .kort {
         display: inline-block;
         width: 40vw;
-        height: 70vh; 
+        height: 68vh; 
         background-color: #4C4E52;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
         border: 1px solid #4C4E52;
@@ -108,7 +108,7 @@
     
     .kort-text p{
         color: white;
-        font-size: 18px;
+        font-size: 2.5vh;
      
         font-weight: 300;
         margin: 0;
@@ -122,7 +122,7 @@
 
     #image1 {
         width: 40vw;
-        height: 70vh; 
+        height: 68vh; 
         padding-top: 10px;
         display: inline-block;
         -webkit-animation: rise 4s;
@@ -137,12 +137,27 @@
         box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
     }
 
+    /* Kodene for anmasjonen som får bildet til å "heve" seg fra bunnen */
+    @-webkit-keyframes rise {
+        from {
+        -webkit-transform: rotate(60deg) translateX(70px);
+        transform: rotate(70deg) translateX(60px);
+        opacity: 0.01; /* Med opacity kan vi bestemme hvor synlig kortene er i begynnelsen fordi vi er i "from" */
+    }
+    
+    to {
+        -webkit-transform: rotate(0) translateX(0);
+        transform: rotate(0) translateX(0);
+        opacity: 1; /* Nå kan vi bestemme hvor synlige kortene skal være etter at de har hevet seg helt*/
+
+    } }
+
     .infoboks {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items:center;
-        padding-top: 10vh;
+        padding-top: 7vh;
     }
 
     /*Kode for knappen*/
@@ -169,7 +184,7 @@
         color: #FFDEAD;
         overflow-wrap:break-word;
         
-        font-size: 40px;
+        font-size: 7vh;
         font-weight: 80;
         
         width: 100%;
@@ -190,7 +205,7 @@
         }
         
         25%{
-            width: 85%;
+            width: 100%;
         }
     }
     
@@ -333,8 +348,7 @@
         padding-top: 10px;
         display: inline-block;
 
-        -webkit-animation: rise 4s;
-        animation: rise 4s;
+        animation: none;
         transition: 0.5s ease;
         cursor: pointer;
     }
@@ -482,7 +496,7 @@
         text-align: center;
         color: white;
         height: 20vh;
-        padding: 30% 0 0;
+        padding: 10vh 0 0;
         margin-top: 0;
         margin-bottom: 0;
         background-image: linear-gradient(rgba(20, 19, 19, 0.688),

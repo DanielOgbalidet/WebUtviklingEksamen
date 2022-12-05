@@ -60,6 +60,13 @@ html {
     text-decoration: none;
 }
 
+.navbar > ul > li > a:hover {
+    color: #FFDEAD;
+    font-size: 4.5vh;
+}
+
+
+
 /*navbar slutt*/
 
 .forside {
