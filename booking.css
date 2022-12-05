@@ -1,371 +1,253 @@
+
+/* PC SLUTT */
 @media only screen and (min-width:1050px) {
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Slik at alt som går utenfor bakgrunnsbildet ikke er synlig */
-    height: 100%;
-    width: 100%;
-
- 
-  
-}
-
-html {
-    /* font-family from google fonts */
-    color: black;
-   
-    font-family: "papyrus", fantasy;
-    font-size: large;
-    height: 100%;
-    width: 100%;
-}
-
-a {
- text-decoration: none;
- color: white;   
-}
-
-/*navbar start*/
-
-
-
-.logo {
-    grid-area: logo;
-    text-align: center;
-    padding-top: 12%;
-    padding-left: 10px;
-}
-
-.logoName {
-    color: white;
-    font-size: 40px;
-}
-
-.navbar {
-    grid-area: navbar;
-}
-
-.navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding-top: 6vh;
-    padding-left: 5vw;
-    padding-right: 1vw;
-}
-
-#here {
-    border-bottom: 4px solid white; 
-}
-
-.navbar > ul > li > a {
-    color: white;
-    flex-grow: 1;
-    flex-shrink: 1;
-    font-size: 26px;
-    text-decoration: none;
-}
-
-.navbar > ul > li > a:hover {
-    color: #FFDEAD;
-    font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.section1{
-    background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
-    background-position: center;
-    background-size: cover;
-   
-    
-
-
-
-
-    width:100%;
-    height:100%;
-    overflow: hidden;
-
-/* For å få div classene til å stå ved siden av hverandre */
-    display: inline-flex;
-    flex-wrap: wrap;
-
-   
-
-   
-
-}
-
-
-/* For å endre kortet og bildet som flex*/
-.section1>div{
-    margin: 0px;
-    
-}
-
-.section1>.kort{
-    margin-left: 21.9%; /* For å dytte kortet mot høyre side slik at kortet og bildet plasseres i midten*/
-}
-
-
-
-.kort{
-
-width: 30%;
-height: 53%; 
-
-
-
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 2%;
-
-    grid-template-areas: "overskrift" "text";
-    
-
-
-
-    background-color: #4C4E52;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-
-   justify-content: center; 
-
-
-}
-
-
-
-
-.kort-text{
-    grid-area: text;
-    margin: 13%;
-    color: white;
-
-}
-
-
-.kort-text p{
-    color: white;
-    font-size: 20px;
- 
-    font-weight: 300;
-
-    margin-top: 20px;
-}
-
-
-#image1{
-   
-    height: 53%;
-    width: 30%; 
-
-  
-   position: absolute;
-
-   -webkit-animation: rise 4s;
-   animation: rise 4s;
-
-   transition: 0.5s ease;
-   cursor: pointer;
- 
-}
-
-.bilde1{
-  
-
-
-   
-
-    height: 52%;
-    width: 20%; 
-   
-
-}
-
-#image1:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-
-
-
-}
-
-
-
-/*Kode for knappen*/
-
-.knapp{
-
-    width: 35%;
-    height: 10%;
-
-    border-radius: 60px;
-   color: black;
-
-
-    margin-left: 27%;
-    margin-top: 5%;
-}
-
-.knapp:hover{
-    background: #FFDEAD;
-    transition: 0.5s ease;
-}
-
-
-
-
-h1{
-
-    grid-area: "overskrift";
-
-    display: flex;
-    color: #FFDEAD;
-
-
-    font-size: 75%;
-    font-weight: 80;
-
-
-   width: 150%;
-
-
-
-    /*
-    De tre linjene med koder under er viktige for typer animasjonen
-     */
-   
-    white-space: nowrap; 
-    overflow: hidden;
-    animation: type 4s steps(12);
- 
-
-
-}
-
-/* Type animasjon --> animasjonen som for overskriften til å "skrives" inn */
-@keyframes type {
-    0%{
-        width: 0%;
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
     }
-    25%{
-        width: 85%;
-
-    }
-}
-
-
-
-
-
-
-/* Kodene for anmasjonen som får bildet til å "heve" seg fra bunnen */
-@-webkit-keyframes rise {
-    from {
-
-        -webkit-transform: rotate(60deg) translateX(70px);
-        transform: rotate(70deg) translateX(60px);
-        opacity: 0.01; /* Med opacity kan vi bestemme hvor synlig kortene er i begynnelsen fordi vi er i "from" */
-
-    }
-    to {
-        -webkit-transform: rotate(0) translateX(0);
-        transform: rotate(0) translateX(0);
-        opacity: 1; /* Nå kan vi bestemme hvor synlige kortene skal være etter at de har hevet seg helt*/
-
-    } }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width:601px) and (max-width:1049px) {
-
-
-
-
-
-
-/* Tablet versjon */
-
-   
-        *{
-            margin: 0;
-            padding: 0;
-        }
     
-    body{
+    body {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
         height: 100%;
         width: 100%;
-    
     }
 
+    .container {
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        overflow-y: hidden;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% auto 10%;
+        grid-template-areas: 
+            "logo  navbar navbar navbar navbar"
+            "info  info   info   info   info"
+            "footer footer footer footer footer"
+    }
+
+    .logo {
+        grid-area: logo;
+        padding-top: 5vh;
+        padding-left: 3vw;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 5.5vh;
+    }
+    
+    .navbar {
+        grid-area: navbar;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+    
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 6vh;
+        padding-left: 5vw;
+        padding-right: 1vw;
+    }
+    
+    #here {
+        border-bottom: 4px solid white; 
+    }
+    
+    .navbar > ul > li > a {
+        color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 3.5vh;
+        text-decoration: none;
+    }
+    
+    .navbar > ul > li > a:hover {
+        color: #FFDEAD;
+        font-size: 5vh;
+    }
+
+    /* Navbar slutt*/
+
+    .info {
+        grid-area: info;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .kort {
+        display: inline-block;
+        width: 40vw;
+        height: 70vh; 
+        background-color: #4C4E52;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+        border: 1px solid #4C4E52;
+    }
+
+    .kort-text{
+        grid-area: text;
+        margin: 13%;
+        color: white;
+    }
+    
+    
+    .kort-text p{
+        color: white;
+        font-size: 18px;
+     
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .kort-text p:nth-child(3) {
+        margin-top: 2vh;
+        margin-bottom:7vh;
+
+    }
+    
+
+    #image1 {
+        width: 40vw;
+        height: 70vh; 
+        padding-top: 10px;
+        display: inline-block;
+        -webkit-animation: rise 4s;
+        animation: rise 4s;
+     
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    #image1:hover{
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    }
+
+    .infoboks {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        padding-top: 10vh;
+    }
+
+    /*Kode for knappen*/
+    
+    .knapp{
+        width: 40%;
+        height: 8vh;
+        
+        border-radius: 60px;
+        color: black;
+        
+        margin-left: 30%;
+    }
+    
+    
+    .knapp:hover {
+        background: #FFDEAD;
+        transition: 0.5s ease;
+    }
+    
+    h1{
+        grid-area: "overskrift";
+        display: flex;
+        color: #FFDEAD;
+        overflow-wrap:break-word;
+        
+        font-size: 40px;
+        font-weight: 80;
+        
+        width: 100%;
+
+        margin-bottom: 0;
+        
+        /* De tre linjene med koder under er viktige for typer animasjonen */
+        white-space: nowrap; 
+        overflow: hidden;
+        animation: type 4s steps(12);
+    }
+    
+    /* Type animasjon --> animasjonen som for overskriften til å "skrives" inn */
+    
+    @keyframes type {
+        0%{
+            width: 0%;
+        }
+        
+        25%{
+            width: 85%;
+        }
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+
+}
+
+/* PC SLUTT */
+
+
+/* TABLET START */
+@media only screen and (min-width:670px) and (max-width:1049px) {
+    html {
+        color: white;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        overflow-y: hidden;
+        grid-template-columns: auto;
+        grid-template-rows: 11% 10% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
 
     .logo {
         grid-area: logo;
         text-align: center;
-        padding-top: 2%;
+        padding-top: 2vh;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 40px;
+        padding-bottom: 1vh;
         background-color: black;
     }
 
     .logoName {
         color: white;
-        font-size: 35px;
+        font-size: 7vh;
     }
 
     .navbar {
@@ -384,6 +266,9 @@ h1{
         padding-left: 0px;
         list-style: none;
         align-items:center;
+
+        padding-top: 2px;
+
     }
 
     .navbar ul  > li > a {
@@ -396,405 +281,246 @@ h1{
         border-bottom: 2px solid white;
     }
 
-
-
-
-
-
-
-    .kort{
-
-        width: 560px;
-        height: 510px; 
-        
-        
-        
-            display: grid;
-            grid-template-columns:20%;
-            grid-template-rows: 100%;
-        
-            grid-template-areas: "overskrift" "text";
-            
-        
-        
-        
-            background-color: #4C4E52;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-        
-           justify-content: center; 
-        
-        
-        }
-    
-
-        #image1{
-          
-        
-            height: 500px;
-            width: 35%;
-
-            pointer-events: none; /* For å fjerne hover effekten fra bildet siden det er tablet versjon*/
-
-        }
-        
-        .bilde1{
-           
-        
-           animation: none;  /* Fjerne hover effekten fra bildet for tablet versjon */
-           cursor: pointer;
-           height: 20%;
-           
-        
-        }
-        
-       
-        .section1{
-            background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-            rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
-            background-position: center;
-            background-size: cover;
-           
-        
-        
-            width:100%;
-            height:100vh;
-            overflow: hidden;
-
-            
-
-       /* For å få div classene til å stå ved siden av hverandre */
-  
-       
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10% 10% auto;
-    grid-template-areas: 
-        "logo"
-        "navbar"
-        
-        }
-        
-        
-        .section1>div{
-            margin: 0px;
-          
-          
-         
-        }
-        
-
-    
-        .kort{
-    
-    
-            width: 35%;
-            height: 500px; 
-            
-           
-            
-               
-                grid-template-columns:100%;
-                grid-template-rows: 5%;
-            
-                grid-template-areas: "overskrift" "text";
-
-                justify-content: center;
-            
-                background-color: #4C4E52;
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-                
-
-            
-            }
-            
-           
-            
-            
-            .kort-text{
-            
-
-                margin: 8%;
-                color: white;
-            
-            }
-            
-            
-            .kort-text p{
-                color: white;
-                font-size: 18px;
-                padding-top: 10px;
-             
-              
-            }
-            
-            
-            
-            
-           
-            
-            .knapp{
-            
-              
-    
-                width: 40%;
-                height: 12%;
-            
-                border-radius: 60px;
-               color: black;
-            
-            
-                margin-left: 26%;
-              
-            
-             align-items: center;
-            }
-            
-            .knapp:hover{
-                background: #FFDEAD;
-                transition: 0.5s ease; }
-            
-            
-            h1{
-            
-                display: flex;
-                color: #FFDEAD;
-
-                grid-area: "overskrift";
-            
-            
-                font-size: 12px;
-                font-weight: 80; }
-
+    .info {
+        grid-area: info;
+        text-align: center;
+        padding-top: 2vh;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* FOR MOBIL */
-@media only screen and (max-width:800px){
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-body{
-    margin: 0;
-    padding: 0}
-
-
-
-    .section1{
+    .info {
+        grid-area: info;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items:center;
         background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-        rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
         background-position: center;
         background-size: cover;
-       
-    
-    
-        width:100%;
-        height:100%;
-        overflow: hidden;
-    
-   justify-content: center;
+        padding-top: none;
+    }
 
-   
-    
+    .kort {
+        display: inline-block;
+        width: 40%;
+        height: 60vh; 
+        background-color: #4C4E52;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.9);
+        border: 1px solid #4C4E52;
+    }
+
+    .kort-text{
+        grid-area: text;
+        margin: 12%;
+        color: white;
     }
     
     
-    .section1>div{
-        margin: 0px;
-      
+    .kort-text p{
+        color: white;
+        font-size: 2vh;
+    }
 
-        margin-top: 30%;
-
-        margin-right: 140px;
-       
-      
+    .kort-text p:nth-child(2) {
+        margin-bottom: 20px;
     }
     
-
-
-    .kort{
-
-
-
-            width: 140%;
-            height: 50%; 
-   
-
-
-/* Grid koder */
-            display: grid;
-            grid-template-columns:100%;
-            grid-template-rows: 5%;
-            grid-template-areas: "overskrift" "text";
-            
-        
-
-
-            background-color: #4C4E52;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-        
-            justify-content: center;
-
-
-           
- 
-        
-        }
-        
-        #image1{
-            display: none;
-        }
-        
-        
-        .kort-text{
-            grid-area: text;
-            margin: 8%;
-            color: white;
-        
-        }
-        
-        
-        .kort-text p{
-            color: white;
-            font-size: 18px;
-            padding-top: 1px;
-         
-            
-          
-        }
-        
-        
-        
-        
-        /*Kode for knappen*/
-        
-        .knapp{
-        
-          
-
-            width: 40%;
-            height: 15%;
-        
-            border-radius: 60px;
-           color: black;
-        
-        
-            margin-left: 26%;
-            margin-top: 10%; 
-        
-          align-items: center;
-        }
-        
-        .knapp:hover{
-            background: #FFDEAD;
-            transition: 0.5s ease; }
-        
-        
-        h1{
-        
-
-         grid-area: "overskrift";
-
-
-            display: flex;
-            color: #FFDEAD;
-        
-            
-        
-          font-size: 80%;
-         
-
-         
-
-
-           padding-right: 15px;
-
-           width: 120%;
-          
-           border-right:none;
-
-           
-           animation: type 4s steps(17);
-
-           margin-right: 25px;
-
-          
-
-}
-
-
-
-/* Dette er koden for animasjonen som får overskriften til å "skrives" inn*/
-@keyframes type {
-    0%{
-        width: 0%;
-    }
-    50%{
+    #image1 {
         width: 100%;
+        height: 60vh;
+        padding-top: 10px;
+        display: inline-block;
+
+        -webkit-animation: rise 4s;
+        animation: rise 4s;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    .infoboks {
+        display: flex;
+        height: 100%;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .infoboks {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+    }
+
+    /*Kode for knappen*/
+    
+    .knapp{
+        width: 35%;
+        height: 6vh;
+
+        border-radius: 60px;
+        color: white;
+        background-color:  #c8b6a2;
+        border: 2px solid rgb(57, 56, 56);
+        box-shadow: 0px 8px 15px black;
+    }
+    
+    
+    h1 {
+        grid-area: "overskrift";
+        display: flex;
+        color: #FFDEAD;
+        overflow-wrap:break-word;
+        
+        font-size: 4vh;
+        font-weight: 80;
+        
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+        
+}
+/* TABLET SLUTT */ 
+
+/* MOBIL START */ 
+@media only screen and (max-width:669px) {
+    html {
+        color: black;
+        font-family: "papyrus", fantasy;
+        font-size: large;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        height: 110%;
+        width: 100%;
+        display: grid;
+        overflow-y: scroll;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 45% auto;
+        grid-template-areas: 
+            "logo"
+            "navbar"
+            "info"
+    }
+
+    .logo {
+        grid-area: logo;
+        text-align: center;
+        padding-top: 2vh;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 1vh;
+        background-color: black;
+    }
+
+    .logoName {
+        color: white;
+        font-size: 7vh;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: #9F8C76;
 
     }
+
+    .navbar > ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #555;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        vertical-align: middle;
+    }
+
+    .navbar > ul > li {
+        display: flex;
+        align-items:center;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        justify-content:center;
+        border-bottom: 2px solid black;
+    }
+    
+    .navbar > ul > li > a {
+        text-decoration: none;
+        color: white;
+        padding-top: 4px;
+        font-size: 2.5vh;
+    }
+
+    .navbar > ul > li:nth-child(2) {
+        background-color: #684817;
+        text-decoration: underline;
+    }
+
+    .kort-text > h1 {
+        text-align: center;
+        color: white;
+        height: 20vh;
+        padding: 30% 0 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-image: linear-gradient(rgba(20, 19, 19, 0.688),
+        rgba(0, 0, 0, 0.66)) , url(/img/gate.jpeg);
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .kort-text {
+        background-color: #4C4E52;
+        height: 90vh;
+    }
+
+    .kort-text > p {
+        color: white;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    #image1 {
+        display: none;
+    }
+
+    .knapp{
+        width: 40%;
+        height: 8%;
+
+        border-radius: 60px;
+        color: black;
+        background-color:  #c8b6a2;
+        border: 2px solid white;
+
+        margin-left: 30%;
+    }
+    
+
+
 }
 
 
-
-
-
-
-}
