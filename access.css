@@ -18,11 +18,10 @@ html {
 /*navbar start*/
 .logo {
     grid-area: logo;
-    text-align: center;
+    grid-area: logo;
     padding-top: 5vh;
     padding-left: 3vw;
     float: left;
-    margin-right: 120px;
 }
 
 .logoName {
@@ -71,7 +70,7 @@ html {
 
 .forside {
     background-image: linear-gradient(rgba(20, 19, 19, 0.688),
-    rgba(0, 0, 0, 0.5)) , url(./img/gate.jpeg);
+    rgba(0, 0, 0, 0.66)) , url(./img/gate.jpeg);
     background-position-y: center;
     background-size: cover;
     height: 100%;
