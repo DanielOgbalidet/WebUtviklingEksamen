@@ -34,13 +34,13 @@
     
     .logo {
         grid-area: logo;
-        padding-top: 6vh;
-        padding-left: 4vw;
+        padding-top: 5vh;
+        padding-left: 3vw;
     }
     
     .logoName {
         color: white;
-        font-size: 40px;
+        font-size: 5.5vh;
     }
     
     .navbar {
@@ -69,13 +69,13 @@
         color: white;
         flex-grow: 1;
         flex-shrink: 1;
-        font-size: 26px;
+        font-size: 3.5vh;
         text-decoration: none;
     }
     
     .navbar > ul > li > a:hover {
         color: #FFDEAD;
-        font-size: 30px;
+        font-size: 4.5vh;
     }
     
     .info {
@@ -189,7 +189,7 @@
         padding: 0;
         overflow-x: hidden;
         overflow-y: hidden;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 
@@ -202,7 +202,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 10% 10% auto;
+        grid-template-rows: 11% 10% auto;
         grid-template-areas: 
             "logo"
             "navbar"
@@ -212,16 +212,16 @@
     .logo {
         grid-area: logo;
         text-align: center;
-        padding-top: 2%;
+        padding-top: 2vh;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 40px;
+        padding-bottom: 1vh;
         background-color: black;
     }
 
     .logoName {
         color: white;
-        font-size: 35px;
+        font-size: 7vh;
     }
 
     .navbar {
@@ -240,12 +240,20 @@
         padding-left: 0px;
         list-style: none;
         align-items:center;
+        
+        padding-top: 2px;
+
     }
 
     .navbar ul  > li > a {
         text-decoration: none;
         color: white;
-        font-size: 22px;
+        font-size: 3.5vh;
+    }
+
+    .navbar > ul > li > a:hover {
+        color: #FFDEAD;
+        font-size: 4.5vh;
     }
 
     #here {
@@ -432,7 +440,7 @@
         rgba(0, 0, 0, 0.66)) , url(./img/gate.jpeg);
         background-position: center;
         background-size: cover;
-        height: 105vh;
+        height: 10vh;
         padding-top: 0px;
     }
 

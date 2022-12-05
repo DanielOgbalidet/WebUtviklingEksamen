@@ -2,7 +2,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 html {
@@ -11,22 +11,22 @@ html {
     font-family: "papyrus", fantasy;
     font-size: large;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 /*navbar start*/
 .logo {
     grid-area: logo;
     text-align: center;
-    padding-top: 3%;
-    padding-left: 150px;
+    padding-top: 5vh;
+    padding-left: 3vw;
     float: left;
     margin-right: 120px;
 }
 
 .logoName {
     color: white;
-    font-size: 40px;
+    font-size: 5.5vh;
 }
 
 .navbar {
@@ -38,6 +38,7 @@ html {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-evenly;
+
     margin: 0;
     padding: 0;
     list-style: none;
@@ -54,13 +55,13 @@ html {
     color: white;
     flex-grow: 1;
     flex-shrink: 1;
-    font-size: 26px;
+    font-size: 3.5vh;
     text-decoration: none;
 }
 
 .navbar > ul > li > a:hover {
     color: #FFDEAD;
-    font-size: 30px;
+    font-size: 4.5vh;
 }
 /*navbar slutt*/
 
@@ -189,8 +190,8 @@ html {
     display: none;
 }
 
-/* for TABLET */
 
+/* FOR TABLET */
 @media only screen and (max-width:1350px) {
     /* logo */
 
@@ -262,8 +263,10 @@ html {
     }
 }
 
-/* for MOBIL */
+/* FERDIG TABLET */
 
+
+/* FOR MOBIL */
 @media only screen and (max-width:800px) {
     /* overskrift */
     .tittel {
@@ -382,3 +385,7 @@ html {
         font-size: 22px;
     }
 }
+
+/* MOBIL SLUTT */
+
+ 
