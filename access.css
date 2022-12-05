@@ -123,6 +123,18 @@ html {
 
 .meny-container {
     grid-area: info;
+   
+}
+
+.meny {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.meny-container > p  {
+    margin-top: 10px;
 }
 
 
